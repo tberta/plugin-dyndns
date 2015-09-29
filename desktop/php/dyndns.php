@@ -79,7 +79,7 @@ foreach (object::all() as $object) {
            </div>
        </div>
        <div class="form-group">
-        <label class="col-sm-3 control-label">{{Type}}</label>
+        <label class="col-sm-3 control-label">{{Service}}</label>
         <div class="col-sm-3">
             <select class="form-control eqLogicAttr" data-l1key="configuration" data-l2key="type">
                 <option value="nonde">{{Aucun}}</option>
@@ -104,7 +104,7 @@ foreach (object::all() as $object) {
         <div class="form-group">
             <label class="col-sm-3 control-label">{{Mot de passe}}</label>
             <div class="col-sm-3">
-                <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="password" />
+                <input type="password" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="password" />
             </div>
         </div>
     </div>
