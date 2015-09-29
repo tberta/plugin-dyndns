@@ -84,10 +84,11 @@ foreach (object::all() as $object) {
             <select class="form-control eqLogicAttr" data-l1key="configuration" data-l2key="type">
                 <option value="nonde">{{Aucun}}</option>
                 <option value="dyndnsorg">www.dyndns.org</option>
+                <option value="noipcom">www.noip.com</option>
             </select>
         </div>
     </div>
-    <div class="serviceType dyndnsorg">
+    <div class="serviceType dyndnsorg noipcom">
     <div class="form-group">
             <label class="col-sm-3 control-label">{{Hostname}}</label>
             <div class="col-sm-3">
