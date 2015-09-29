@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info>
+    <id>dyndns</id>
+    <name>Dyndns</name>
+    <description>Plugin pour mettre à jour dynamiquement des DNS</description>
+    <icon>fa fa-sitemap</icon>
+    <licence>AGPL</licence>
+    <author>Loïc Gevrey</author>
+    <installation>Aucune</installation>
+    <require>1.210</require>
+    <category>programming</category>
+</info>
+
