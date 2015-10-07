@@ -25,6 +25,7 @@ Vous retrouvez ici toute la configuration de votre équipement :
 
 * *Nom de l'équipement Ambilight* : nom de votre équipement Ambilights,
 * *Objet parent* : indique l'objet parent auquel appartient l'équipement,
+* *Catégorie* : les catégories de l'équipement (il peut appartenir à plusieurs catégories),
 * *Activer* : permet de rendre votre équipement actif,
 * *Visible* : rend votre équipement visible sur le dashboard,
 * *Service* : Le nom du service utilisé (dyndns.org, noip.com)
