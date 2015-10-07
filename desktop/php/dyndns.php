@@ -72,7 +72,7 @@ foreach (object::all() as $object) {
                </div>
            </div>
            <div class="form-group">
-              <label class="col-sm-4 control-label">{{Catégorie}}</label>
+           <label class="col-sm-3 control-label">{{Catégorie}}</label>
               <div class="col-sm-8">
                 <?php
 foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
