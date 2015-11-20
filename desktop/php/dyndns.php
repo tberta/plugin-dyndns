@@ -97,6 +97,7 @@ foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
                 <option value="nonde">{{Aucun}}</option>
                 <option value="dyndnsorg">www.dyndns.org</option>
                 <option value="noipcom">www.noip.com</option>
+                <option value="ovhcom">www.ovh.com</option>
             </select>
         </div>
     </div>

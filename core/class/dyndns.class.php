@@ -112,8 +112,17 @@ class dyndns extends eqLogic {
 				$request_http->setUserAgent('Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.12) Gecko/20070508 Firefox/1.5.0.12');
 				$result = $request_http->exec();
 				if (strpos($result, 'good') === false || strpos($result, 'nochg') === false) {
-					throw new Exception(__('Erreur de mise à jour de dyndns.org : ', __FILE__) . $result);
+					throw new Exception(__('Erreur de mise à jour de noip.com : ', __FILE__) . $result);
 				}
+			case 'ovhcom':
+				$url = 'https://' . $this->getConfiguration('username') . ':' . $this->getConfiguration('password') . '@www.ovh.com/nic/update?system=dyndns&hostname=' . $this->getConfiguration('hostname') . '&myip=' . $ip;
+				$request_http = new com_http($url);
+				$request_http->setUserAgent('Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.12) Gecko/20070508 Firefox/1.5.0.12');
+				$result = $request_http->exec();
+				if (strpos($result, 'good') === false && strpos($result, 'nochg') === false) {
+					throw new Exception(__('Erreur de mise à jour de ovh.com : ', __FILE__) . $result);
+				}
+				break;
 				break;
 		}
 	}
