@@ -101,7 +101,7 @@ foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
             </select>
         </div>
     </div>
-    <div class="serviceType dyndnsorg noipcom">
+    <div class="serviceType dyndnsorg noipcom ovhcom">
         <div class="form-group">
             <label class="col-sm-3 control-label">{{Hostname}}</label>
             <div class="col-sm-3">

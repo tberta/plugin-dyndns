@@ -114,6 +114,7 @@ class dyndns extends eqLogic {
 				if (strpos($result, 'good') === false || strpos($result, 'nochg') === false) {
 					throw new Exception(__('Erreur de mise à jour de noip.com : ', __FILE__) . $result);
 				}
+				break;
 			case 'ovhcom':
 				$url = 'https://' . $this->getConfiguration('username') . ':' . $this->getConfiguration('password') . '@www.ovh.com/nic/update?system=dyndns&hostname=' . $this->getConfiguration('hostname') . '&myip=' . $ip;
 				$request_http = new com_http($url);
@@ -122,7 +123,6 @@ class dyndns extends eqLogic {
 				if (strpos($result, 'good') === false && strpos($result, 'nochg') === false) {
 					throw new Exception(__('Erreur de mise à jour de ovh.com : ', __FILE__) . $result);
 				}
-				break;
 				break;
 		}
 	}
