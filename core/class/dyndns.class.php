@@ -27,7 +27,7 @@ class dyndns extends eqLogic {
 	public static function getExternalIP() {
 		try {
 			$request_http = new com_http('http://checkip.dyndns.com/');
-			$externalContent = $request_http->exec(2, 0);
+			$externalContent = $request_http->exec(2, 1);
 			preg_match('/Current IP Address: \[?([:.0-9a-fA-F]+)\]?/', $externalContent, $m);
 			if (isset($m[1])) {
 				return $m[1];
@@ -36,7 +36,7 @@ class dyndns extends eqLogic {
 
 		}
 		$request_http = new com_http('http://myip.dnsomatic.com/');
-		return $request_http->exec(2, 0);
+		return $request_http->exec(2, 1);
 	}
 
 	public static function cron15($_eqLogic_id = null, $_force = false) {
