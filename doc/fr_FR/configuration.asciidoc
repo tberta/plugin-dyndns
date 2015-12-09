@@ -45,3 +45,6 @@ Jeedom va vérifier toute les 15 minutes l'ip externe si celle-ci a changé alor
 
 [IMPORTANT]
 Le plugin fournis une commande pour forcer la mise à jour. Attention à ne pas en abuser car vous pouvez être bani temporairement du service de DNS
+
+[NOTE]
+Si vous utilisez OVH, attention le nom d'utilisateur et de la forme mondomaine.com-identificant alors que le domaine est bien sous la forme mon-dynHost.mmondomaine.com
