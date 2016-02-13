@@ -71,7 +71,6 @@ class dyndns extends eqLogic {
 		}
 		$update->setType('action');
 		$update->setSubType('other');
-		$update->setEventOnly(1);
 		$update->setEqLogic_id($this->getId());
 		$update->save();
 
@@ -84,7 +83,6 @@ class dyndns extends eqLogic {
 		}
 		$externalIP->setType('info');
 		$externalIP->setSubType('string');
-		$externalIP->setEventOnly(1);
 		$externalIP->setEqLogic_id($this->getId());
 		$externalIP->save();
 		self::cron15($this->getId());
