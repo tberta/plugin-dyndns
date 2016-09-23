@@ -3,11 +3,9 @@
     <id>dyndns</id>
     <name>Dyndns</name>
     <description>Plugin pour mettre à jour dynamiquement des DNS</description>
-    <icon>fa fa-sitemap</icon>
     <licence>AGPL</licence>
-    <author>Loïc Gevrey</author>
-    <installation>Aucune</installation>
-    <require>1.209</require>
+    <author>Loïc</author>
+    <require>2.0</require>
     <category>programming</category>
 </info>
 
