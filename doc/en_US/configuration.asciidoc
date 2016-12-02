@@ -6,22 +6,22 @@ image::../images/dyndns.PNG[]
 
 == Equipment configuration
 
-La configuration des équipements dyndns est accessible à partir du menu plugin : 
+La configuration des équipements dyndns est accessible à partir du menu plugin :
 
 image::../images/dyndns2.PNG[]
 
-Voilà à quoi ressemble la page du plugin Dyndns (ici avec déjà 1 équipement) : 
+Voilà à quoi ressemble la page du plugin Dyndns (ici avec déjà 1 équipement) :
 
 image::../images/dyndns3.PNG[]
 
 [TIP]
 Comme à beaucoup d'endroits sur Jeedom, placer la souris tout à gauche permet de faire apparaître un menu d'accès rapide (vous pouvez, à partir de votre profil, le laisser toujours visible).
 
-Une fois que vous cliquez sur l'un d'eux, vous obtenez : 
+Une fois que vous cliquez sur l'un d'eux, vous obtenez :
 
 image::../images/dyndns4.PNG[]
 
-Vous retrouvez ici toute la configuration de votre équipement : 
+Vous retrouvez ici toute la configuration de votre équipement :
 
 * *Nom de l'équipement Ambilight* : nom de votre équipement Ambilights,
 * *Objet parent* : indique l'objet parent auquel appartient l'équipement,
@@ -32,9 +32,10 @@ Vous retrouvez ici toute la configuration de votre équipement :
 * *Hostname* : nom complet du DNS à mettre à jour (ex toto.ddns.net)
 * *Nom d'utilisateur* : nom d'utilisateur sur le service en question
 * *Mot de passer* : mot de passe sur le service en question
+* *Token* : token utilisé pour duckdns
 
 
-En-dessous vous retrouvez la liste des commandes : 
+En-dessous vous retrouvez la liste des commandes :
 
 * *Nom* : le nom affiché sur le dashboard,
 * *Afficher* : permet d'afficher la donnée sur le dashboard,
