@@ -90,34 +90,41 @@ foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
              <input type="checkbox" class="eqLogicAttr bootstrapSwitch" data-label-text="{{Visible}}" data-l1key="isVisible" checked/>
          </div>
      </div>
-     <div class="form-group">
+		 <div class="form-group">
         <label class="col-sm-3 control-label">{{Service}}</label>
         <div class="col-sm-3">
             <select class="form-control eqLogicAttr" data-l1key="configuration" data-l2key="type">
                 <option value="nonde">{{Aucun}}</option>
                 <option value="dyndnsorg">www.dyndns.org</option>
                 <option value="noipcom">www.noip.com</option>
-                <option value="ovhcom">www.ovh.com</option>
+								<option value="ovhcom">www.ovh.com</option>
+                <option value="duckdns">www.duckdns.org</option>
             </select>
         </div>
     </div>
-    <div class="serviceType dyndnsorg noipcom ovhcom">
+    <div class="serviceType dyndnsorg noipcom ovhcom duckdns">
         <div class="form-group">
             <label class="col-sm-3 control-label">{{Hostname}}</label>
             <div class="col-sm-3">
                 <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="hostname" />
             </div>
         </div>
-        <div class="form-group">
+        <div class="form-group serviceType dyndnsorg noipcom ovhcom">
             <label class="col-sm-3 control-label">{{Nom d'utilisateur}}</label>
             <div class="col-sm-3">
                 <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="username" />
             </div>
         </div>
-        <div class="form-group">
+        <div class="form-group serviceType dyndnsorg noipcom ovhcom">
             <label class="col-sm-3 control-label">{{Mot de passe}}</label>
             <div class="col-sm-3">
                 <input type="password" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="password" />
+            </div>
+        </div>
+				<div class="form-group serviceType duckdns">
+            <label class="col-sm-3 control-label">{{Token}}</label>
+            <div class="col-sm-3">
+                <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="token" />
             </div>
         </div>
     </div>
