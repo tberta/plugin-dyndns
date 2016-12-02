@@ -122,6 +122,15 @@ class dyndns extends eqLogic {
 					throw new Exception(__('Erreur de mise à jour de ovh.com : ', __FILE__) . $result);
 				}
 				break;
+      case 'duckdns':
+				$url = 'https://www.duckdns.org/update?domains=' . $this->getConfiguration('hostname') . '&token=' . $this->getConfiguration('token') . '&ip=' . $ip;
+				$request_http = new com_http($url);
+				$request_http->setUserAgent('Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.12) Gecko/20070508 Firefox/1.5.0.12');
+				$result = $request_http->exec();
+				if (strpos($result, 'OK') === false) {
+					throw new Exception(__('Erreur de mise à jour de duckdns : ' . $url, __FILE__) . $result);
+				}
+				break;
 		}
 	}
 
