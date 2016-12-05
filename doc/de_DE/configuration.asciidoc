@@ -6,7 +6,7 @@ image::../images/dyndns.PNG[]
 
 == Geräte Konfiguration
 
-La configuration des équipements dyndns est accessible à partir du menu plugin :
+La configuration des équipements Dyndns est accessible à partir du menu plugin :
 
 image::../images/dyndns2.PNG[]
 
@@ -23,7 +23,7 @@ image::../images/dyndns4.PNG[]
 
 Hier finden sie die ganze Konfiguration Ihrer Geräte:
 
-* *Nom de l'équipement Ambilight* : nom de votre équipement Ambilights,
+* *Nom de l'équipement Ambilight* : nom de votre équipement Ambilight,
 * *Objet parent* : indique l'objet parent auquel appartient l'équipement,
 * *Catégorie* : les catégories de l'équipement (il peut appartenir à plusieurs catégories),
 * *Activer* : permet de rendre votre équipement actif,
@@ -42,10 +42,10 @@ En-dessous vous retrouvez la liste des commandes :
 * *Tester* : permet de tester la commande
 
 [NOTE]
-Jeedom va vérifier toute les 15 minutes l'ip externe si celle-ci a changé alors le DNS sera mise à jour
+Jeedom va vérifier toute les 15 minutes l'ip externe, si celle-ci a changé alors le DNS sera mise à jour
 
 [IMPORTANT]
-Le plugin fournis une commande pour forcer la mise à jour. Attention à ne pas en abuser car vous pouvez être bani temporairement du service de DNS
+Le plugin fournit une commande pour forcer la mise à jour. Attention à ne pas en abuser car vous pouvez être banni temporairement du service de DNS
 
 [NOTE]
-Si vous utilisez OVH, attention le nom d'utilisateur et de la forme mondomaine.com-identificant alors que le domaine est bien sous la forme mon-dynHost.mmondomaine.com
+Si vous utilisez OVH, attention le nom d'utilisateur est de la forme mondomaine.com-identificant alors que le domaine est bien sous la forme mon-dynHost.mmondomaine.com
