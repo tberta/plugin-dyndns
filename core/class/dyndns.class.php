@@ -109,7 +109,7 @@ class dyndns extends eqLogic {
 				$request_http = new com_http($url,$this->getConfiguration('username'),$this->getConfiguration('password'));           	
 				$request_http->setUserAgent('Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.12) Gecko/20070508 Firefox/1.5.0.12');
 				$result = $request_http->exec();
-				if (strpos($result, 'good') === false || strpos($result, 'nochg') === false) {
+				if (strpos($result, 'good') === false && strpos($result, 'nochg') === false) {
 					throw new Exception(__('Erreur de mise à jour de noip.com : ', __FILE__) . $result);
 				}
 				break;
