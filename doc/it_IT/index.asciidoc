@@ -1,5 +1,0 @@
-= Dyndns
-
-Ce plugin permet de mettre à jour un service de DNS dynamique (dyndns,noip,duckdns,...)
-
-include::configuration.asciidoc[]
