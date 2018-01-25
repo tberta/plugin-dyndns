@@ -32,7 +32,7 @@ Une fois que vous cliquez sur l’un d’eux, vous obtenez :
 
 ![dyndns4](../images/dyndns4.PNG)
 
-Vous retrouvez ici toute la configuration de votre équipement :
+Hier finden sie die ganze Konfiguration Ihrer Geräte:
 
 -   **Nom de l’équipement Ambilight** : nom de votre équipement
     Ambilight,

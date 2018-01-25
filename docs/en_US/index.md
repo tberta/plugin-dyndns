@@ -1,8 +1,7 @@
 Ce plugin permet de mettre à jour un service de DNS dynamique
 (dyndns,noip,duckdns,…​)
 
-Configuration du plugin 
-=======================
+== Plugin configuration
 
 Après téléchargement du plugin, il vous suffit juste d’activer celui-ci,
 il n’y a aucune configuration à ce niveau.
@@ -32,20 +31,20 @@ Une fois que vous cliquez sur l’un d’eux, vous obtenez :
 
 ![dyndns4](../images/dyndns4.PNG)
 
-Vous retrouvez ici toute la configuration de votre équipement :
+You can find here the full configuration of your device :
 
 -   **Nom de l’équipement Ambilight** : nom de votre équipement
     Ambilight,
 
--   **Objet parent** : indique l’objet parent auquel appartient
-    l’équipement,
+-   **Parent Object** : means the parent object the equipment depend
+    equipment,
 
 -   **Catégorie** : les catégories de l’équipement (il peut appartenir à
     plusieurs catégories),
 
--   **Activer** : permet de rendre votre équipement actif,
+-   ** Enable **: to make your equipment active,
 
--   **Visible** : rend votre équipement visible sur le dashboard,
+-   ** Visible **: makes your equipment visible on the dashboard,
 
 -   **Service** : Le nom du service utilisé (dyndns.org, noip.com)
 
