@@ -3,12 +3,12 @@ Ce plugin permet de mettre à jour un service de DNS dynamique
 
 == Plugin configuration
 
-Après téléchargement du plugin, il vous suffit juste d’activer celui-ci,
-il n’y a aucune configuration à ce niveau.
+After downloading the plugin, you just have to activate it,
+there is no configuration at this level.
 
 ![dyndns](../images/dyndns.PNG)
 
-Configuration des équipements 
+Equipment configuration
 =============================
 
 La configuration des équipements Dyndns est accessible à partir du menu
@@ -39,7 +39,7 @@ You can find here the full configuration of your device :
 -   **Parent Object** : means the parent object the equipment depend
     equipment,
 
--   **Catégorie** : les catégories de l’équipement (il peut appartenir à
+-   **Category**: categories of equipment (it may belong to
     plusieurs catégories),
 
 -   **Enable**: to make your equipment active,

@@ -4,12 +4,12 @@ Ce plugin permet de mettre à jour un service de DNS dynamique
 configuración del plugin
 =======================
 
-Après téléchargement du plugin, il vous suffit juste d’activer celui-ci,
-il n’y a aucune configuration à ce niveau.
+Después de descargar el plugin, sólo hay que activarlo,
+no hay ninguna configuración a este nivel.
 
 ![dyndns](../images/dyndns.PNG)
 
-Configuration des équipements 
+Configuración del dispositivo
 =============================
 
 La configuration des équipements Dyndns est accessible à partir du menu
@@ -40,7 +40,7 @@ Aquí encontrará toda la configuración de su dispositivo:
 -   **Objeto padre** : especifica el objeto padre al que pertenece
     equipos,
 
--   **Catégorie** : les catégories de l’équipement (il peut appartenir à
+-   ** ** Categoría: categorías de equipos (que pueden pertenecer a
     plusieurs catégories),
 
 -   ** ** Activar: para que su equipo activo,
