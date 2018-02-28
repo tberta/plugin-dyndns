@@ -1,7 +1,8 @@
 Ce plugin permet de mettre à jour un service de DNS dynamique
 (dyndns,noip,duckdns,…​)
 
-== Plugin configuration
+Plugin configuration
+=======================
 
 After downloading the plugin, you just have to activate it,
 there is no configuration at this level.
@@ -36,7 +37,7 @@ You can find here the full configuration of your device :
 -   **Nom de l’équipement Ambilight** : nom de votre équipement
     Ambilight,
 
--   **Parent Object** : means the parent object the equipment depend
+-   **Parent Object**: Specifies the parent object to which belongs
     equipment,
 
 -   **Category**: categories of equipment (it may belong to
