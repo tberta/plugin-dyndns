@@ -96,7 +96,7 @@ class dyndns extends eqLogic {
 		$ip = $externalIP->execCmd(null, 2);
 		switch ($this->getConfiguration('type')) {
 			case 'dyndnsorg':
-				$url = 'https://' . $this->getConfiguration('username') . ':' . $this->getConfiguration('password') . '@members.dyndns.org/nic/update?hostname=' . $this->getConfiguration('hostname') . '&myip=' . $ip;
+				$url = 'https://' . urlencode($this->getConfiguration('username')) . ':' . urlencode($this->getConfiguration('password')) . '@members.dyndns.org/nic/update?hostname=' . $this->getConfiguration('hostname') . '&myip=' . $ip;
 				$request_http = new com_http($url);
 				$request_http->setUserAgent('Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.12) Gecko/20070508 Firefox/1.5.0.12');
 				$result = $request_http->exec();
@@ -114,7 +114,7 @@ class dyndns extends eqLogic {
 				}
 				break;
 			case 'ovhcom':
-				$url = 'https://' . $this->getConfiguration('username') . ':' . $this->getConfiguration('password') . '@www.ovh.com/nic/update?system=dyndns&hostname=' . $this->getConfiguration('hostname') . '&myip=' . $ip;
+				$url = 'https://' . urlencode($this->getConfiguration('username')) . ':' . urlencode($this->getConfiguration('password')) . '@www.ovh.com/nic/update?system=dyndns&hostname=' . $this->getConfiguration('hostname') . '&myip=' . $ip;
 				$request_http = new com_http($url);
 				$request_http->setUserAgent('Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.12) Gecko/20070508 Firefox/1.5.0.12');
 				$result = $request_http->exec();
@@ -132,7 +132,7 @@ class dyndns extends eqLogic {
 				}
 				break;
       		case 'stratocom':
-      			$url = 'https://' . $this->getConfiguration('username') . ':' . $this->getConfiguration('password') . '@dyndns.strato.com/nic/update?system=dyndns&hostname=' . $this->getConfiguration('hostname') . '&myip=' . $ip;
+      			$url = 'https://' . urlencode($this->getConfiguration('username')) . ':' . urlencode($this->getConfiguration('password')) . '@dyndns.strato.com/nic/update?system=dyndns&hostname=' . $this->getConfiguration('hostname') . '&myip=' . $ip;
       			$request_http = new com_http($url);
       			$request_http->setUserAgent('Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.12) Gecko/20070508 Firefox/1.5.0.12');
       			$result = $request_http->exec();
