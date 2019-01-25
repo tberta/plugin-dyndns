@@ -57,13 +57,13 @@ You can find here the full configuration of your device :
 
 -   **Token** : token utilisé pour duckdns
 
-En-dessous vous retrouvez la liste des commandes :
+Below you will find the list of commands:
 
 -   **Nom** : le nom affiché sur le dashboard,
 
 -   **Afficher** : permet d’afficher la donnée sur le dashboard,
 
--   **Tester** : permet de tester la commande
+-   **Test**: allows to test the command
 
 > **Note**
 >
