@@ -1,3 +1,7 @@
+# 13/08/2019
+
+- Support de PHP 7.3
+
 # 17/04/2019
 
 - Correction d'un bug sur l'icone des équipements
