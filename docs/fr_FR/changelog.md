@@ -1,3 +1,7 @@
+# 13/01/2020
+
+- Amélioration et correction de bug pour jeedom V4
+
 # 13/08/2019
 
 - Support de PHP 7.3
