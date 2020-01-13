@@ -50,8 +50,7 @@ foreach ($eqLogics as $eqLogic) {
 			<div role="tabpanel" class="tab-pane active" id="eqlogictab">
     <form class="form-horizontal">
         <fieldset>
-            <legend><i class="fa fa-arrow-circle-left eqLogicAction cursor" data-action="returnToThumbnailDisplay"></i> {{Général}}  <i class='fa fa-cogs eqLogicAction pull-right cursor expertModeVisible' data-action='configure'></i></legend>
-            <div class="form-group">
+		<div class="form-group">
                 <label class="col-sm-3 control-label">{{Nom de l'équipement dyndns}}</label>
                 <div class="col-sm-3">
                     <input type="text" class="eqLogicAttr form-control" data-l1key="id" style="display : none;" />
