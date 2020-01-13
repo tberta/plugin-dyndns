@@ -41,6 +41,13 @@ foreach ($eqLogics as $eqLogic) {
 				<a class="btn btn-default btn-sm eqLogicAction roundedLeft" data-action="configure"><i class="fas fa-cogs"></i> {{Configuration avancée}}</a><a class="btn btn-default btn-sm eqLogicAction" data-action="copy"><i class="fas fa-copy"></i> {{Dupliquer}}</a><a class="btn btn-sm btn-success eqLogicAction" data-action="save"><i class="fas fa-check-circle"></i> {{Sauvegarder}}</a><a class="btn btn-danger btn-sm eqLogicAction roundedRight" data-action="remove"><i class="fas fa-minus-circle"></i> {{Supprimer}}</a>
 			</span>
 		</div>
+	<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation"><a class="eqLogicAction cursor" aria-controls="home" role="tab" data-action="returnToThumbnailDisplay"><i class="fas fa-arrow-circle-left"></i></a></li>
+			<li role="presentation" class="active"><a href="#eqlogictab" aria-controls="home" role="tab" data-toggle="tab"><i class="fas fa-tachometer-alt"></i> {{Equipement}}</a></li>
+			<li role="presentation"><a href="#commandtab" aria-controls="profile" role="tab" data-toggle="tab"><i class="fas fa-list-alt"></i> {{Commandes}}</a></li>
+		</ul>
+		<div class="tab-content" style="height:calc(100% - 50px);overflow:auto;overflow-x: hidden;">
+			<div role="tabpanel" class="tab-pane active" id="eqlogictab">
     <form class="form-horizontal">
         <fieldset>
             <legend><i class="fa fa-arrow-circle-left eqLogicAction cursor" data-action="returnToThumbnailDisplay"></i> {{Général}}  <i class='fa fa-cogs eqLogicAction pull-right cursor expertModeVisible' data-action='configure'></i></legend>
@@ -124,7 +131,8 @@ foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
     </div>
 </fieldset>
 </form>
-
+	</div>
+			<div role="tabpanel" class="tab-pane" id="commandtab">
 <legend>{{Commandes}}</legend>
 <table id="table_cmd" class="table table-bordered table-condensed">
     <thead>
@@ -136,6 +144,9 @@ foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
     </tbody>
 </table>
 </div>
+</div>
+	
+		</div>
 </div>
 
 <?php include_file('desktop', 'dyndns', 'js', 'dyndns');?>
