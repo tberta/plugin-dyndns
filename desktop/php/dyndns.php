@@ -8,7 +8,7 @@ $eqLogics = eqLogic::byType('dyndns');
 ?>
 
 <div class="row row-overflow">
-   <div class="col-lg-10 col-md-9 col-sm-8 eqLogicThumbnailDisplay">
+   <div class="col-lg-12 eqLogicThumbnailDisplay">
 <legend><i class="fas fa-cog"></i> {{Gestion}}</legend>	   
     <div class="eqLogicThumbnailContainer">
      	<div class="cursor eqLogicAction logoPrimary" data-action="add">
