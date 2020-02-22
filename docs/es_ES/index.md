@@ -1,83 +1,83 @@
-Ce plugin permet de mettre à jour un service de DNS dynamique
-(dyndns,noip,duckdns,…​)
+Este complemento permite actualizar un servicio DNS dinámico
+(Dyndns, NOIP, duckdns ...)
 
-configuración del plugin
+Configuración del complemento 
 =======================
 
-Después de descargar el plugin, sólo hay que activarlo,
-no hay ninguna configuración a este nivel.
+Après téléchargement du plugin, il vous suffit juste d’activer celui-ci,
+il n’y a aucune configuration à ce niveau.
 
-![dyndns](../images/dyndns.PNG)
+![DYNDNS] (../ images / dyndns.PNG)
 
-Configuración del dispositivo
+Configuración del equipo 
 =============================
 
-La configuration des équipements Dyndns est accessible à partir du menu
+Se puede acceder a la configuración del equipo Dyndns desde el menú
 plugin :
 
-![dyndns2](../images/dyndns2.PNG)
+![Dyndns2] (../ images / dyndns2.PNG)
 
-Voilà à quoi ressemble la page du plugin Dyndns (ici avec déjà 1
-équipement) :
+Así es como se ve la página del complemento Dyndns (aquí con 1
+equipos) :
 
-![dyndns3](../images/dyndns3.PNG)
+![Dyndns3] (../ images / dyndns3.PNG)
 
-> **Tip**
+> **punta**
 >
 > Comme à beaucoup d’endroits sur Jeedom, placer la souris tout à gauche
 > permet de faire apparaître un menu d’accès rapide (vous pouvez, à
-> partir de votre profil, le laisser toujours visible).
+> desde su perfil, siempre déjelo visible).
 
 Une fois que vous cliquez sur l’un d’eux, vous obtenez :
 
-![dyndns4](../images/dyndns4.PNG)
+![Dyndns4] (../ images / dyndns4.PNG)
 
-Aquí encontrará toda la configuración de su dispositivo:
+Aquí encontrarás toda la configuración de tu equipo :
 
--   **Nom de l’équipement Ambilight** : nom de votre équipement
-    Ambilight,
+-   **apellido de l’équipement Ambilight** : nombre de su equipo
+    Ambilight
 
--   **Objeto padre** : especifica el objeto padre al que pertenece
-    equipos,
+-   **Objeto padre** : indique l’objet parent auquel appartient
+    l’équipement,
 
--   ** ** Categoría: categorías de equipos (que pueden pertenecer a
+-   **categoría** : les catégories de l’équipement (il peut appartenir à
     varias categorías),
 
--   ** ** Activar: para que su equipo activo,
+-   **Activar** : activa su equipo,
 
--   ** ** visible hace que su equipo visible en el salpicadero,
+-   **visible** : hace que su equipo sea visible en el tablero de instrumentos,
 
--   **Service** : Le nom du service utilisé (dyndns.org, noip.com)
+-   **servicio** : El nombre del servicio utilizado (dyndns.org, noip.com)
 
--   **Hostname** : nom complet du DNS à mettre à jour (ex toto.ddns.net)
+-   **nombre de host** : apellidobre DNS completo para actualizar (por ejemplo, toto.ddns.net)
 
--   **Nom d’utilisateur** : nom d’utilisateur sur le service en question
+-   **apellido d’utilisateur** : nom d’utilisateur sur le service en question
 
--   **Mot de passer** : mot de passe sur le service en question
+-   **Contraseña** : contraseña en el servicio en cuestión
 
--   **Token** : token utilisé pour duckdns
+-   **simbólico** : ficha utilizada para duckdns
 
-En-dessous vous retrouvez la liste des commandes :
+A continuación encontrará la lista de pedidos. :
 
--   **Nom** : le nom affiché sur le dashboard,
+-   **apellido** : el nombre que se muestra en el tablero,
 
--   **Afficher** : permet d’afficher la donnée sur le dashboard,
+-   **visualización** : permet d’afficher la donnée sur le dashboard,
 
--   **Tester** : permet de tester la commande
+-   **prueba** : permite probar el comando
 
-> **Note**
+> **nota**
 >
 > Jeedom va vérifier toute les 15 minutes l’ip externe, si celle-ci a
-> changé alors le DNS sera mise à jour
+> cambiado, luego se actualizará el DNS
 
-> **Important**
+> **importante**
 >
-> Le plugin fournit une commande pour forcer la mise à jour. Attention à
-> ne pas en abuser car vous pouvez être banni temporairement du service
-> de DNS
+> El complemento proporciona un comando para forzar la actualización. Atención a
+> no abuses de él porque puedes ser expulsado temporalmente del servicio
+> DNS
 
-> **Note**
+> **nota**
 >
 > Si vous utilisez OVH, attention le nom d’utilisateur est de la forme
-> mondomaine.com-identificant alors que le domaine est bien sous la
-> forme mon-dynHost.mmondomaine.com
+> mydomain.com-identificador mientras el dominio está bien bajo
+> formulario mon-dynHost.mmydomain.com

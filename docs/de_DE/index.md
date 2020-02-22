@@ -1,83 +1,83 @@
-Ce plugin permet de mettre à jour un service de DNS dynamique
-(dyndns,noip,duckdns,…​)
+Mit diesem Plugin können Sie einen dynamischen DNS-Dienst aktualisieren
+(DynDNS, NOIP, duckdns ...)
 
-Plugin-Konfiguration
+Plugin Konfiguration 
 =======================
 
-Nachdem das Plugin herunterzuladen, müssen Sie nur um es zu aktivieren,
-gibt es auf dieser Ebene keine Konfiguration.
+Après téléchargement du Plugin, il vous suffit juste d’activer celui-ci,
+il n’y a aucune configuration à ce niveau.
 
-![dyndns](../images/dyndns.PNG)
+![Dyndns] (../ images / dyndns.PNG)
 
-Gerätekonfiguration
+Gerätekonfiguration 
 =============================
 
-La configuration des équipements Dyndns est accessible à partir du menu
-plugin :
+Die Konfiguration der Dyndns-Geräte ist über das Menü zugänglich
+Plugin :
 
-![dyndns2](../images/dyndns2.PNG)
+![Dyndns2] (../ images / dyndns2.PNG)
 
-Voilà à quoi ressemble la page du plugin Dyndns (ici avec déjà 1
-équipement) :
+So sieht die Dyndns-Plugin-Seite aus (hier mit bereits 1
+Ausrüstung) :
 
-![dyndns3](../images/dyndns3.PNG)
+![Dyndns3] (../ images / dyndns3.PNG)
 
-> **Tip**
+> **Spitze**
 >
-> Wie an vielen Stellen in Jeedom kann mit dem Mauszeiger ganz links, ein
-> Menü mit Schnellzugriff aufgerufen werden (Sie können in Ihrem Profil
-> immer sichtbar einstellen).  
+> Comme à beaucoup d’endroits sur Jeedom, placer la souris tout à gauche
+> permet de faire apparaître un menu d’accès rapide (vous pouvez, à
+> Lassen Sie es in Ihrem Profil immer sichtbar.
 
-Sobald Sie eines davon anklicken, erhalten Sie :
+Une fois que vous cliquez sur l’un d’eux, vous obtenez :
 
-![dyndns4](../images/dyndns4.PNG)
+![Dyndns4] (../ images / dyndns4.PNG)
 
-Sie werden hier alle die Konfiguration Ihrer Geräte finden:
+Hier finden Sie die gesamte Konfiguration Ihrer Geräte :
 
--   **Nom de l’équipement Ambilight** : nom de votre équipement
-    Ambilight,
+-   **Name de l’équipement Ambilight** : Name Ihrer Ausrüstung
+    Ambilight
 
--   **Übergeordnete Objekt** zeigt das übergeordnete Objekt gehört
-    Ausrüstung,
+-   **Übergeordnetes Objekt** : indique l’objet parent auquel appartient
+    l’équipement,
 
--   ** ** Kategorie: Gerätekategorien (es kann gehören
-    plusieurs catégories),
+-   **Kategorie** : les catégories de l’équipement (il peut appartenir à
+    mehrere Kategorien),
 
--   **Aktivieren**: auf Ihre aktive Ausrüstung zu machen,
+-   **activate** : macht Ihre Ausrüstung aktiv,
 
--   Visible ** ** macht Ihr Gerät sichtbar auf dem Armaturenbrett,
+-   **sichtbar** : macht Ihre Ausrüstung auf dem Armaturenbrett sichtbar,
 
--   **Service** : Le nom du service utilisé (dyndns.org, noip.com)
+-   **Service** : Der Name des verwendeten Dienstes (dyndns.org, noip.com)
 
--   **Hostname** : nom complet du DNS à mettre à jour (ex toto.ddns.net)
+-   **Host-Namen** : vollständiger zu aktualisierender DNS-Name (z. B. toto.ddns.net)
 
--   **Nom d’utilisateur** : nom d’utilisateur sur le service en question
+-   **Name d’utilisateur** : nom d’utilisateur sur le service en question
 
--   **Mot de passer** : mot de passe sur le service en question
+-   **Passwort** : Passwort für den betreffenden Dienst
 
--   **Token** : token utilisé pour duckdns
+-   **Zeichen** : Zeichen für Enten
 
-En-dessous vous retrouvez la liste des commandes :
+Nachfolgend finden Sie die Liste der Bestellungen :
 
--   **Nom** : le nom affiché sur le dashboard,
+-   **Name** : der auf dem Dashboard angezeigte Name,
 
--   **Afficher** : permet d’afficher la donnée sur le dashboard,
+-   **Anzeige** : permet d’afficher la donnée sur le dashboard,
 
--   **Tester** : permet de tester la commande
+-   **Test** : ermöglicht das Testen des Befehls
 
-> **Note**
+> **Notiz**
 >
 > Jeedom va vérifier toute les 15 minutes l’ip externe, si celle-ci a
-> changé alors le DNS sera mise à jour
+> geändert, dann wird der DNS aktualisiert
 
-> **Important**
+> **wichtig**
 >
-> Le plugin fournit une commande pour forcer la mise à jour. Attention à
-> ne pas en abuser car vous pouvez être banni temporairement du service
-> de DNS
+> Das Plugin bietet einen Befehl zum Erzwingen der Aktualisierung. Achten Sie darauf
+> Missbrauche es nicht, da du möglicherweise vorübergehend vom Dienst ausgeschlossen wirst
+> DNS
 
-> **Note**
+> **Notiz**
 >
 > Si vous utilisez OVH, attention le nom d’utilisateur est de la forme
-> mondomaine.com-identificant alors que le domaine est bien sous la
-> forme mon-dynHost.mmondomaine.com
+> mydomain.com-ID, während sich die Domain weit unter dem befindet
+> Formular mon-dynHost.mmydomain.com

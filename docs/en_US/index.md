@@ -1,83 +1,83 @@
-Ce plugin permet de mettre à jour un service de DNS dynamique
-(dyndns,noip,duckdns,…​)
+This plugin allows to update a dynamic DNS service
+(Dyndns, NOIP, duckdns ...)
 
-Plugin configuration
+Plugin configuration 
 =======================
 
-After downloading the plugin, you just have to activate it,
-there is no configuration at this level.
+Après téléchargement du plugin, il vous suffit juste d’activer celui-ci,
+il n’y a aucune configuration à ce niveau.
 
-![dyndns](../images/dyndns.PNG)
+![Dyndns] (../ images / dyndns.PNG)
 
-Equipment configuration
+Equipment configuration 
 =============================
 
-La configuration des équipements Dyndns est accessible à partir du menu
+The configuration of Dyndns equipment is accessible from the menu
 plugin :
 
-![dyndns2](../images/dyndns2.PNG)
+![Dyndns2] (../ images / dyndns2.PNG)
 
-Voilà à quoi ressemble la page du plugin Dyndns (ici avec déjà 1
-équipement) :
+This is what the Dyndns plugin page looks like (here with already 1
+equipment) :
 
-![dyndns3](../images/dyndns3.PNG)
+![Dyndns3] (../ images / dyndns3.PNG)
 
 > **Tip**
 >
 > Comme à beaucoup d’endroits sur Jeedom, placer la souris tout à gauche
 > permet de faire apparaître un menu d’accès rapide (vous pouvez, à
-> partir de votre profil, le laisser toujours visible).
+> from your profile, always leave it visible).
 
-Once you click on one of them, you get:
+Une fois que vous cliquez sur l’un d’eux, vous obtenez :
 
-![dyndns4](../images/dyndns4.PNG)
+![Dyndns4] (../ images / dyndns4.PNG)
 
-You can find here the full configuration of your device :
+Here you find all the configuration of your equipment :
 
--   **Nom de l’équipement Ambilight** : nom de votre équipement
-    Ambilight,
+-   **Last name de l’équipement Ambilight** : name of your equipment
+    Ambilight
 
--   **Parent Object**: Specifies the parent object to which belongs
-    equipment,
+-   **Parent object** : indique l’objet parent auquel appartient
+    l’équipement,
 
--   **Category**: categories of equipment (it may belong to
-    plusieurs catégories),
+-   **Category** : les catégories de l’équipement (il peut appartenir à
+    several categories),
 
--   **Enable**: to make your equipment active,
+-   **Activate** : makes your equipment active,
 
--   **Visible**: makes your equipment visible on the dashboard,
+-   **Visible** : makes your equipment visible on the dashboard,
 
--   **Service** : Le nom du service utilisé (dyndns.org, noip.com)
+-   **Service** : The name of the service used (dyndns.org, noip.com)
 
--   **Hostname** : nom complet du DNS à mettre à jour (ex toto.ddns.net)
+-   **hostname** : full DNS name to update (eg toto.ddns.net)
 
--   **Nom d’utilisateur** : nom d’utilisateur sur le service en question
+-   **Last name d’utilisateur** : nom d’utilisateur sur le service en question
 
--   **Mot de passer** : mot de passe sur le service en question
+-   **Password** : password on the service in question
 
--   **Token** : token utilisé pour duckdns
+-   **token** : token used for duckdns
 
-Below you will find the list of commands:
+Below you find the list of orders :
 
--   **Nom** : le nom affiché sur le dashboard,
+-   **Last name** : the name displayed on the dashboard,
 
--   **Afficher** : permet d’afficher la donnée sur le dashboard,
+-   **Pin up** : permet d’afficher la donnée sur le dashboard,
 
--   **Test**: allows to test the command
+-   **Test** : allows to test the command
 
 > **Note**
 >
 > Jeedom va vérifier toute les 15 minutes l’ip externe, si celle-ci a
-> changé alors le DNS sera mise à jour
+> changed then the DNS will be updated
 
 > **Important**
 >
-> Le plugin fournit une commande pour forcer la mise à jour. Attention à
-> ne pas en abuser car vous pouvez être banni temporairement du service
-> de DNS
+> The plugin provides a command to force the update. Be careful with
+> do not abuse it because you may be temporarily banned from the service
+> DNS
 
 > **Note**
 >
 > Si vous utilisez OVH, attention le nom d’utilisateur est de la forme
-> mondomaine.com-identificant alors que le domaine est bien sous la
-> forme mon-dynHost.mmondomaine.com
+> my field.com-identifier while the domain is well under the
+> form mon-dynHost.mmy field.com
