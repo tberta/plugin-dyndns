@@ -4,10 +4,10 @@ Este complemento permite actualizar un servicio DNS dinámico
 Configuración del complemento 
 =======================
 
-Après téléchargement du plugin, il vous suffit juste d’activer celui-ci,
-il n’y a aucune configuration à ce niveau.
+Después de descargar el complemento, solo necesita activarlo,
+No hay configuración en este nivel.
 
-![DYNDNS] (../ images / dyndns.PNG)
+![dyndns](../images/dyndns.PNG)
 
 Configuración del equipo 
 =============================
@@ -15,32 +15,32 @@ Configuración del equipo
 Se puede acceder a la configuración del equipo Dyndns desde el menú
 plugin :
 
-![Dyndns2] (../ images / dyndns2.PNG)
+![dyndns2](../images/dyndns2.PNG)
 
 Así es como se ve la página del complemento Dyndns (aquí con 1
 equipos) :
 
-![Dyndns3] (../ images / dyndns3.PNG)
+![dyndns3](../images/dyndns3.PNG)
 
 > **punta**
 >
-> Comme à beaucoup d’endroits sur Jeedom, placer la souris tout à gauche
-> permet de faire apparaître un menu d’accès rapide (vous pouvez, à
+> Como en muchos lugares de Jeedom, coloca el mouse en el extremo izquierdo
+> muestra un menú de acceso rápido (puede, en
 > desde su perfil, siempre déjelo visible).
 
-Une fois que vous cliquez sur l’un d’eux, vous obtenez :
+Una vez que haces clic en uno de ellos, obtienes :
 
-![Dyndns4] (../ images / dyndns4.PNG)
+![dyndns4](../images/dyndns4.PNG)
 
 Aquí encontrarás toda la configuración de tu equipo :
 
--   **apellido de l’équipement Ambilight** : nombre de su equipo
+-   **apellidobre del equipo de Ambilight** : nombre de su equipo
     Ambilight
 
--   **Objeto padre** : indique l’objet parent auquel appartient
-    l’équipement,
+-   **Objeto padre** : indica el objeto padre al que pertenece
+    equipos,
 
--   **categoría** : les catégories de l’équipement (il peut appartenir à
+-   **categoría** : categorías de equipos (puede pertenecer a
     varias categorías),
 
 -   **Activar** : activa su equipo,
@@ -51,7 +51,7 @@ Aquí encontrarás toda la configuración de tu equipo :
 
 -   **nombre de host** : apellidobre DNS completo para actualizar (por ejemplo, toto.ddns.net)
 
--   **apellido d’utilisateur** : nom d’utilisateur sur le service en question
+-   **nombre del usuario** : nombre de usuario en el servicio en cuestión
 
 -   **Contraseña** : contraseña en el servicio en cuestión
 
@@ -61,13 +61,13 @@ A continuación encontrará la lista de pedidos. :
 
 -   **apellido** : el nombre que se muestra en el tablero,
 
--   **visualización** : permet d’afficher la donnée sur le dashboard,
+-   **visualización** : muestra los datos en el tablero,
 
 -   **prueba** : permite probar el comando
 
 > **nota**
 >
-> Jeedom va vérifier toute les 15 minutes l’ip externe, si celle-ci a
+> Jeedom verificará la ip externa cada 15 minutos, si tiene
 > cambiado, luego se actualizará el DNS
 
 > **importante**
@@ -78,6 +78,6 @@ A continuación encontrará la lista de pedidos. :
 
 > **nota**
 >
-> Si vous utilisez OVH, attention le nom d’utilisateur est de la forme
+> Si usa OVH, tenga cuidado de que el nombre de usuario esté en el formulario
 > mydomain.com-identificador mientras el dominio está bien bajo
 > formulario mon-dynHost.mmydomain.com

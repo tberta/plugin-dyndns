@@ -4,10 +4,10 @@ This plugin allows to update a dynamic DNS service
 Plugin configuration 
 =======================
 
-Après téléchargement du plugin, il vous suffit juste d’activer celui-ci,
-il n’y a aucune configuration à ce niveau.
+After downloading the plugin, you just need to activate it,
+there is no configuration at this level.
 
-![Dyndns] (../ images / dyndns.PNG)
+![dyndns](../images/dyndns.PNG)
 
 Equipment configuration 
 =============================
@@ -15,32 +15,32 @@ Equipment configuration
 The configuration of Dyndns equipment is accessible from the menu
 plugin :
 
-![Dyndns2] (../ images / dyndns2.PNG)
+![dyndns2](../images/dyndns2.PNG)
 
 This is what the Dyndns plugin page looks like (here with already 1
 equipment) :
 
-![Dyndns3] (../ images / dyndns3.PNG)
+![dyndns3](../images/dyndns3.PNG)
 
 > **Tip**
 >
-> Comme à beaucoup d’endroits sur Jeedom, placer la souris tout à gauche
-> permet de faire apparaître un menu d’accès rapide (vous pouvez, à
+> As in many places on Jeedom, place the mouse on the far left
+> brings up a quick access menu (you can, at
 > from your profile, always leave it visible).
 
-Une fois que vous cliquez sur l’un d’eux, vous obtenez :
+Once you click on one of them, you get :
 
-![Dyndns4] (../ images / dyndns4.PNG)
+![dyndns4](../images/dyndns4.PNG)
 
 Here you find all the configuration of your equipment :
 
--   **Last name de l’équipement Ambilight** : name of your equipment
+-   **Ambilight equipment name** : name of your equipment
     Ambilight
 
--   **Parent object** : indique l’objet parent auquel appartient
-    l’équipement,
+-   **Parent object** : indicates the parent object to which belongs
+    equipment,
 
--   **Category** : les catégories de l’équipement (il peut appartenir à
+-   **Category** : equipment categories (it may belong to
     several categories),
 
 -   **Activate** : makes your equipment active,
@@ -51,7 +51,7 @@ Here you find all the configuration of your equipment :
 
 -   **hostname** : full DNS name to update (eg toto.ddns.net)
 
--   **Last name d’utilisateur** : nom d’utilisateur sur le service en question
+-   **username** : username on the service in question
 
 -   **Password** : password on the service in question
 
@@ -61,13 +61,13 @@ Below you find the list of orders :
 
 -   **Last name** : the name displayed on the dashboard,
 
--   **Pin up** : permet d’afficher la donnée sur le dashboard,
+-   **Pin up** : displays the data on the dashboard,
 
 -   **Test** : allows to test the command
 
 > **Note**
 >
-> Jeedom va vérifier toute les 15 minutes l’ip externe, si celle-ci a
+> Jeedom will check the external ip every 15 minutes, if it has
 > changed then the DNS will be updated
 
 > **Important**
@@ -78,6 +78,6 @@ Below you find the list of orders :
 
 > **Note**
 >
-> Si vous utilisez OVH, attention le nom d’utilisateur est de la forme
+> If you use OVH, be careful the username is in the form
 > my field.com-identifier while the domain is well under the
 > form mon-dynHost.mmy field.com

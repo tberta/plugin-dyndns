@@ -4,10 +4,10 @@ Mit diesem Plugin können Sie einen dynamischen DNS-Dienst aktualisieren
 Plugin Konfiguration 
 =======================
 
-Après téléchargement du Plugin, il vous suffit juste d’activer celui-ci,
-il n’y a aucune configuration à ce niveau.
+Nachdem Sie das Plugin heruntergeladen haben, müssen Sie es nur noch aktivieren.
+Auf dieser Ebene gibt es keine Konfiguration.
 
-![Dyndns] (../ images / dyndns.PNG)
+![dyndns](../images/dyndns.PNG)
 
 Gerätekonfiguration 
 =============================
@@ -15,32 +15,32 @@ Gerätekonfiguration
 Die Konfiguration der Dyndns-Geräte ist über das Menü zugänglich
 Plugin :
 
-![Dyndns2] (../ images / dyndns2.PNG)
+![dyndns2](../images/dyndns2.PNG)
 
 So sieht die Dyndns-Plugin-Seite aus (hier mit bereits 1
 Ausrüstung) :
 
-![Dyndns3] (../ images / dyndns3.PNG)
+![dyndns3](../images/dyndns3.PNG)
 
 > **Spitze**
 >
-> Comme à beaucoup d’endroits sur Jeedom, placer la souris tout à gauche
-> permet de faire apparaître un menu d’accès rapide (vous pouvez, à
+> Platzieren Sie wie an vielen Stellen in Jeedom die Maus ganz links
+> ruft ein Schnellzugriffsmenü auf (Sie können unter
 > Lassen Sie es in Ihrem Profil immer sichtbar.
 
-Une fois que vous cliquez sur l’un d’eux, vous obtenez :
+Sobald Sie auf eine davon klicken, erhalten Sie :
 
-![Dyndns4] (../ images / dyndns4.PNG)
+![dyndns4](../images/dyndns4.PNG)
 
 Hier finden Sie die gesamte Konfiguration Ihrer Geräte :
 
--   **Name de l’équipement Ambilight** : Name Ihrer Ausrüstung
+-   **Name der Ambilight-Ausrüstung** : Name Ihrer Ausrüstung
     Ambilight
 
--   **Übergeordnetes Objekt** : indique l’objet parent auquel appartient
-    l’équipement,
+-   **Übergeordnetes Objekt** : gibt das übergeordnete Objekt an, zu dem es gehört
+    Ausrüstung,
 
--   **Kategorie** : les catégories de l’équipement (il peut appartenir à
+-   **Kategorie** : Gerätekategorien (es kann gehören
     mehrere Kategorien),
 
 -   **activate** : macht Ihre Ausrüstung aktiv,
@@ -51,7 +51,7 @@ Hier finden Sie die gesamte Konfiguration Ihrer Geräte :
 
 -   **Host-Namen** : vollständiger zu aktualisierender DNS-Name (z. B. toto.ddns.net)
 
--   **Name d’utilisateur** : nom d’utilisateur sur le service en question
+-   **Benutzername** : Benutzername des betreffenden Dienstes
 
 -   **Passwort** : Passwort für den betreffenden Dienst
 
@@ -61,13 +61,13 @@ Nachfolgend finden Sie die Liste der Bestellungen :
 
 -   **Name** : der auf dem Dashboard angezeigte Name,
 
--   **Anzeige** : permet d’afficher la donnée sur le dashboard,
+-   **Anzeige** : zeigt die Daten im Dashboard an,
 
 -   **Test** : ermöglicht das Testen des Befehls
 
 > **Notiz**
 >
-> Jeedom va vérifier toute les 15 minutes l’ip externe, si celle-ci a
+> Jeedom überprüft die externe IP alle 15 Minuten, falls vorhanden
 > geändert, dann wird der DNS aktualisiert
 
 > **wichtig**
@@ -78,6 +78,6 @@ Nachfolgend finden Sie die Liste der Bestellungen :
 
 > **Notiz**
 >
-> Si vous utilisez OVH, attention le nom d’utilisateur est de la forme
+> Wenn Sie OVH verwenden, achten Sie darauf, dass der Benutzername im Formular enthalten ist
 > mydomain.com-ID, während sich die Domain weit unter dem befindet
 > Formular mon-dynHost.mmydomain.com

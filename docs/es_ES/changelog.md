@@ -4,8 +4,8 @@ Ce plugin permet de mettre à jour un service de DNS dynamique
 Configuration du plugin 
 =======================
 
-Après téléchargement du plugin, il vous suffit juste d’activer celui-ci,
-il n’y a aucune configuration à ce niveau.
+Après téléchargement du plugin, il vous suffit juste d'activer celui-ci,
+il n'y a aucune configuration à ce niveau.
 
 ![dyndns](../images/dyndns.PNG)
 
@@ -24,23 +24,23 @@ Voilà à quoi ressemble la page du plugin Dyndns (ici avec déjà 1
 
 > **Tip**
 >
-> Comme à beaucoup d’endroits sur Jeedom, placer la souris tout à gauche
-> permet de faire apparaître un menu d’accès rapide (vous pouvez, à
+> Comme à beaucoup d'endroits sur Jeedom, placer la souris tout à gauche
+> permet de faire apparaître un menu d'accès rapide (vous pouvez, à
 > partir de votre profil, le laisser toujours visible).
 
-Une fois que vous cliquez sur l’un d’eux, vous obtenez :
+Une fois que vous cliquez sur l'un d'eux, vous obtenez :
 
 ![dyndns4](../images/dyndns4.PNG)
 
 Vous retrouvez ici toute la configuration de votre équipement :
 
--   **Nom de l’équipement Ambilight** : nom de votre équipement
+-   **Nom de l'équipement Ambilight** : nom de votre équipement
     Ambilight,
 
--   **Objet parent** : indique l’objet parent auquel appartient
-    l’équipement,
+-   **Objet parent** : indique l'objet parent auquel appartient
+    l'équipement,
 
--   **Catégorie** : les catégories de l’équipement (il peut appartenir à
+-   **Catégorie** : les catégories de l'équipement (il peut appartenir à
     plusieurs catégories),
 
 -   **Activer** : permet de rendre votre équipement actif,
@@ -51,7 +51,7 @@ Vous retrouvez ici toute la configuration de votre équipement :
 
 -   **Hostname** : nom complet du DNS à mettre à jour (ex toto.ddns.net)
 
--   **Nom d’utilisateur** : nom d’utilisateur sur le service en question
+-   **Nom d'utilisateur** : nom d'utilisateur sur le service en question
 
 -   **Mot de passer** : mot de passe sur le service en question
 
@@ -61,13 +61,13 @@ En-dessous vous retrouvez la liste des commandes :
 
 -   **Nom** : le nom affiché sur le dashboard,
 
--   **Afficher** : permet d’afficher la donnée sur le dashboard,
+-   **Afficher** : permet d'afficher la donnée sur le dashboard,
 
 -   **Tester** : permet de tester la commande
 
 > **Note**
 >
-> Jeedom va vérifier toute les 15 minutes l’ip externe, si celle-ci a
+> Jeedom va vérifier toute les 15 minutes l'ip externe, si celle-ci a
 > changé alors le DNS sera mise à jour
 
 > **Important**
@@ -78,6 +78,6 @@ En-dessous vous retrouvez la liste des commandes :
 
 > **Note**
 >
-> Si vous utilisez OVH, attention le nom d’utilisateur est de la forme
+> Si vous utilisez OVH, attention le nom d'utilisateur est de la forme
 > mondomaine.com-identificant alors que le domaine est bien sous la
 > forme mon-dynHost.mmondomaine.com
