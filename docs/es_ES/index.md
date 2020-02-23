@@ -5,7 +5,7 @@ Configuración del complemento
 =======================
 
 Después de descargar el complemento, solo necesita activarlo,
-No hay configuración en este nivel.
+no hay configuración a este nivel.
 
 ![dyndns](../images/dyndns.PNG)
 
@@ -26,7 +26,7 @@ equipos) :
 >
 > Como en muchos lugares de Jeedom, coloca el mouse en el extremo izquierdo
 > muestra un menú de acceso rápido (puede, en
-> desde su perfil, siempre déjelo visible).
+> desde tu perfil, siempre déjalo visible).
 
 Una vez que haces clic en uno de ellos, obtienes :
 
@@ -79,5 +79,5 @@ A continuación encontrará la lista de pedidos. :
 > **nota**
 >
 > Si usa OVH, tenga cuidado de que el nombre de usuario esté en el formulario
-> mydomain.com-identificador mientras el dominio está bien bajo
-> formulario mon-dynHost.mmydomain.com
+> midominio.com-identificador mientras el dominio está bien bajo
+> formulario mon-dynHost.mmidominio.com
