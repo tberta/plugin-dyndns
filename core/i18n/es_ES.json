@@ -1,43 +1,43 @@
 {
-    "desktop\/js\/dyndns.js": {
-        "Afficher": "visualización",
-        "Tester": "prueba"
-    },
-    "desktop\/php\/dyndns.php": {
+    "plugins\/dyndns\/desktop\/php\/dyndns.php": {
         "401 - Accès non autorisé": "401 - Acceso no autorizado",
-        "Gestion": "administración",
-        "Ajouter": "añadir",
-        "Mes dyndns": "Mis dyndns",
+        "Gestion": "Gestión",
+        "Ajouter": "Añadir",
+        "Mes dyndns": "",
         "Rechercher": "Buscar",
         "Configuration avancée": "Configuración avanzada",
-        "Dupliquer": "duplicado",
+        "Dupliquer": "Duplicar",
         "Sauvegarder": "Guardar",
-        "Supprimer": "remove",
-        "Equipement": "equipo",
-        "Commandes": "comandos",
-        "Nom de l'équipement dyndns": "Nombre del equipo dyndns",
+        "Supprimer": "Borrar",
+        "Equipement": "Dispositivos",
+        "Commandes": "Comandos",
+        "Nom de l'équipement dyndns": "",
         "Objet parent": "Objeto padre",
-        "Aucun": "no",
-        "Catégorie": "categoría",
+        "Aucun": "Ninguna",
+        "Catégorie": "Categoría",
         "Activer": "Activar",
-        "Visible": "visible",
-        "Service": "servicio",
-        "Hostname": "nombre de host",
-        "Nom d'utilisateur": "nombre del usuario",
+        "Visible": "Visible",
+        "Service": "Servicio",
+        "Hostname": "Nombre de host",
+        "Nom d'utilisateur": "Nombre de usuario",
         "Mot de passe": "Contraseña",
-        "Token": "simbólico",
-        "Nom": "apellido",
-        "Type": "tipo",
-        "Action": "acción"
+        "Token": "Simbólico",
+        "Nom": "Nombre",
+        "Type": "Tipo",
+        "Action": "Acción"
     },
-    "core\/class\/dyndns.class.php": {
-        "Mettre à jour": "Update",
+    "plugins\/dyndns\/desktop\/js\/dyndns.js": {
+        "Afficher": "Mostrar",
+        "Tester": "Probar"
+    },
+    "plugins\/dyndns\/core\/class\/dyndns.class.php": {
+        "Mettre à jour": "Actualización",
         "IP": "IP",
-        "Commande externalIP inexistante": "Nonexistent externalIP command",
-        "Erreur de mise à jour de dyndns.org : ": "Error updating dyndns.org:",
-        "Erreur de mise à jour de noip.com : ": "Noip.com update error:",
-        "Erreur de mise à jour de ovh.com : ": "Ovh.com update error:",
-        "Erreur de mise à jour de duckdns : ' . $url": "Error updating duckdns: &#39;. $ url",
-        "Erreur de mise à jour de strato.com : ": "Error updating strato.com:"
+        "Commande externalIP inexistante": "",
+        "Erreur de mise à jour de dyndns.org : ": "",
+        "Erreur de mise à jour de noip.com : ": "",
+        "Erreur de mise à jour de ovh.com : ": "",
+        "Erreur de mise à jour de duckdns : ' . $url": "",
+        "Erreur de mise à jour de strato.com : ": ""
     }
 }

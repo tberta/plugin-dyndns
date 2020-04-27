@@ -1,43 +1,43 @@
 {
-    "desktop\/js\/dyndns.js": {
-        "Afficher": "Afficher",
-        "Tester": "Tester"
+    "plugins\/dyndns\/desktop\/php\/dyndns.php": {
+        "401 - Accès non autorisé": "401-不正アクセス",
+        "Gestion": "管理",
+        "Ajouter": "加えます",
+        "Mes dyndns": "",
+        "Rechercher": "検索",
+        "Configuration avancée": "高度な構成",
+        "Dupliquer": "重複",
+        "Sauvegarder": "セーブ",
+        "Supprimer": "取り除きます",
+        "Equipement": "設備",
+        "Commandes": "コマンド",
+        "Nom de l'équipement dyndns": "",
+        "Objet parent": "親オブジェクト",
+        "Aucun": "何でもありません",
+        "Catégorie": "カテゴリ",
+        "Activer": "アクティブ",
+        "Visible": "目に見えます",
+        "Service": "",
+        "Hostname": "",
+        "Nom d'utilisateur": "ユーザー名",
+        "Mot de passe": "パスワード",
+        "Token": "",
+        "Nom": "表題",
+        "Type": "タイプ",
+        "Action": "アクション"
     },
-    "desktop\/php\/dyndns.php": {
-        "401 - Accès non autorisé": "401 - Accès non autorisé",
-        "Gestion": "Gestion",
-        "Ajouter": "Ajouter",
-        "Mes dyndns": "Mes dyndns",
-        "Rechercher": "Rechercher",
-        "Configuration avancée": "Configuration avancée",
-        "Dupliquer": "Dupliquer",
-        "Sauvegarder": "Sauvegarder",
-        "Supprimer": "Supprimer",
-        "Equipement": "Equipement",
-        "Commandes": "Commandes",
-        "Nom de l'équipement dyndns": "Nom de l'équipement dyndns",
-        "Objet parent": "Objet parent",
-        "Aucun": "Aucun",
-        "Catégorie": "Catégorie",
-        "Activer": "Activer",
-        "Visible": "Visible",
-        "Service": "Service",
-        "Hostname": "Hostname",
-        "Nom d'utilisateur": "Nom d'utilisateur",
-        "Mot de passe": "Mot de passe",
-        "Token": "Token",
-        "Nom": "Nom",
-        "Type": "Type",
-        "Action": "Action"
+    "plugins\/dyndns\/desktop\/js\/dyndns.js": {
+        "Afficher": "ディスプレイ",
+        "Tester": "テスト"
     },
-    "core\/class\/dyndns.class.php": {
-        "Mettre à jour": "Update",
-        "IP": "IP",
-        "Commande externalIP inexistante": "Nonexistent externalIP command",
-        "Erreur de mise à jour de dyndns.org : ": "Error updating dyndns.org:",
-        "Erreur de mise à jour de noip.com : ": "Noip.com update error:",
-        "Erreur de mise à jour de ovh.com : ": "Ovh.com update error:",
-        "Erreur de mise à jour de duckdns : ' . $url": "Error updating duckdns: &#39;. $ url",
-        "Erreur de mise à jour de strato.com : ": "Error updating strato.com:"
+    "plugins\/dyndns\/core\/class\/dyndns.class.php": {
+        "Mettre à jour": "更新する",
+        "IP": "",
+        "Commande externalIP inexistante": "",
+        "Erreur de mise à jour de dyndns.org : ": "",
+        "Erreur de mise à jour de noip.com : ": "",
+        "Erreur de mise à jour de ovh.com : ": "",
+        "Erreur de mise à jour de duckdns : ' . $url": "",
+        "Erreur de mise à jour de strato.com : ": ""
     }
 }

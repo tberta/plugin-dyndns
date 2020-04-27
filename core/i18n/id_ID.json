@@ -1,43 +1,43 @@
 {
-    "desktop\/js\/dyndns.js": {
-        "Afficher": "Afficher",
-        "Tester": "Tester"
+    "plugins\/dyndns\/desktop\/php\/dyndns.php": {
+        "401 - Accès non autorisé": "401 - Akses tidak sah",
+        "Gestion": "Manajemen",
+        "Ajouter": "Tambahan",
+        "Mes dyndns": "",
+        "Rechercher": "Pencarian",
+        "Configuration avancée": "Konfigurasi lanjutan",
+        "Dupliquer": "Duplikat",
+        "Sauvegarder": "Menyimpan",
+        "Supprimer": "Menghapus",
+        "Equipement": "Peralatan",
+        "Commandes": "Perintah",
+        "Nom de l'équipement dyndns": "",
+        "Objet parent": "Objek induk",
+        "Aucun": "Tak ada",
+        "Catégorie": "Kategori",
+        "Activer": "Mengaktifkan",
+        "Visible": "Terlihat",
+        "Service": "",
+        "Hostname": "",
+        "Nom d'utilisateur": "Nama pemakai",
+        "Mot de passe": "Password",
+        "Token": "",
+        "Nom": "Nama",
+        "Type": "Jenis",
+        "Action": "Tindakan"
     },
-    "desktop\/php\/dyndns.php": {
-        "401 - Accès non autorisé": "401 - Accès non autorisé",
-        "Gestion": "Gestion",
-        "Ajouter": "Ajouter",
-        "Mes dyndns": "Mes dyndns",
-        "Rechercher": "Rechercher",
-        "Configuration avancée": "Configuration avancée",
-        "Dupliquer": "Dupliquer",
-        "Sauvegarder": "Sauvegarder",
-        "Supprimer": "Supprimer",
-        "Equipement": "Equipement",
-        "Commandes": "Commandes",
-        "Nom de l'équipement dyndns": "Nom de l'équipement dyndns",
-        "Objet parent": "Objet parent",
-        "Aucun": "Aucun",
-        "Catégorie": "Catégorie",
-        "Activer": "Activer",
-        "Visible": "Visible",
-        "Service": "Service",
-        "Hostname": "Hostname",
-        "Nom d'utilisateur": "Nom d'utilisateur",
-        "Mot de passe": "Mot de passe",
-        "Token": "Token",
-        "Nom": "Nom",
-        "Type": "Type",
-        "Action": "Action"
+    "plugins\/dyndns\/desktop\/js\/dyndns.js": {
+        "Afficher": "Memenitikan",
+        "Tester": "Coba"
     },
-    "core\/class\/dyndns.class.php": {
-        "Mettre à jour": "Update",
-        "IP": "IP",
-        "Commande externalIP inexistante": "Nonexistent externalIP command",
-        "Erreur de mise à jour de dyndns.org : ": "Error updating dyndns.org:",
-        "Erreur de mise à jour de noip.com : ": "Noip.com update error:",
-        "Erreur de mise à jour de ovh.com : ": "Ovh.com update error:",
-        "Erreur de mise à jour de duckdns : ' . $url": "Error updating duckdns: &#39;. $ url",
-        "Erreur de mise à jour de strato.com : ": "Error updating strato.com:"
+    "plugins\/dyndns\/core\/class\/dyndns.class.php": {
+        "Mettre à jour": "Memperbarui",
+        "IP": "",
+        "Commande externalIP inexistante": "",
+        "Erreur de mise à jour de dyndns.org : ": "",
+        "Erreur de mise à jour de noip.com : ": "",
+        "Erreur de mise à jour de ovh.com : ": "",
+        "Erreur de mise à jour de duckdns : ' . $url": "",
+        "Erreur de mise à jour de strato.com : ": ""
     }
 }
