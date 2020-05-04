@@ -3,7 +3,7 @@
         "401 - Accès non autorisé": "401 - Nicht autorisierter Zugriff",
         "Gestion": "Verwaltung",
         "Ajouter": "Hinzufügen",
-        "Mes dyndns": "",
+        "Mes dyndns": "Meine Dyndns",
         "Rechercher": "Suchen nach",
         "Configuration avancée": "Erweiterte Konfiguration",
         "Dupliquer": "Duplikat",
@@ -11,13 +11,13 @@
         "Supprimer": "Löschen",
         "Equipement": "Gerät",
         "Commandes": "Befehle",
-        "Nom de l'équipement dyndns": "",
+        "Nom de l'équipement dyndns": "Gerätename dyndns",
         "Objet parent": "Übergeordnetes Objekt",
         "Aucun": "Ohne",
         "Catégorie": "Kategorie",
         "Activer": "Aktivieren",
         "Visible": "Sichtbar",
-        "Service": "",
+        "Service": "Service",
         "Hostname": "Host-Namen",
         "Nom d'utilisateur": "Benutzername",
         "Mot de passe": "Passwort",
@@ -33,11 +33,11 @@
     "plugins\/dyndns\/core\/class\/dyndns.class.php": {
         "Mettre à jour": "Update",
         "IP": "IP",
-        "Commande externalIP inexistante": "",
-        "Erreur de mise à jour de dyndns.org : ": "",
-        "Erreur de mise à jour de noip.com : ": "",
-        "Erreur de mise à jour de ovh.com : ": "",
-        "Erreur de mise à jour de duckdns : ' . $url": "",
-        "Erreur de mise à jour de strato.com : ": ""
+        "Commande externalIP inexistante": "Nicht vorhandener externer IP-Befehl",
+        "Erreur de mise à jour de dyndns.org : ": "Fehler beim Aktualisieren von dyndns.org:",
+        "Erreur de mise à jour de noip.com : ": "Noip.com-Aktualisierungsfehler:",
+        "Erreur de mise à jour de ovh.com : ": "Ovh.com-Aktualisierungsfehler:",
+        "Erreur de mise à jour de duckdns : ' . $url": "Fehler beim Aktualisieren von duckdns: '. $ url",
+        "Erreur de mise à jour de strato.com : ": "Fehler beim Aktualisieren von strato.com:"
     }
 }

@@ -4,7 +4,7 @@ This Plugin allows to update a dynamic DNS service
 Plugin configuration 
 =======================
 
-After downloading the Plugin, you just need to activate it,
+After downloading the plugin, you just need to activate it,
 there is no configuration at this level.
 
 ![dyndns](../images/dyndns.PNG)
@@ -34,8 +34,8 @@ Once you click on one of them, you get :
 
 Here you find all the configuration of your equipment :
 
--   ** equipment name** : name of your equipment
-    ,
+-   **Ambilight equipment name** : name of your equipment
+    Ambilight,
 
 -   **Parent object** : indicates the parent object to which belongs
     equipment,
@@ -43,11 +43,11 @@ Here you find all the configuration of your equipment :
 -   **Category** : equipment categories (it may belong to
     multiple categories),
 
--   **Activate** : makes your equipment active,
+-   **Activer** : makes your equipment active,
 
 -   **Visible** : makes your equipment visible on the dashboard,
 
--   **Service** : The name of the service used (dyndns.
+-   **Service** : The name of the service used (dyndns.org, noip.com
 
 -   **Hostname** : full DNS name to update (eg toto.ddns.net)
 
@@ -59,13 +59,13 @@ Here you find all the configuration of your equipment :
 
 Below you find the list of orders :
 
--   **Name** : the name displayed on the dashboard,
+-   **Nom** : the name displayed on the dashboard,
 
--   **Show** : allows to display the data on the dashboard,
+-   **Afficher** : allows to display the data on the dashboard,
 
--   **Test** : Used to test the command
+-   **Tester** : Used to test the command
 
-> **NOTE**
+> **Note**
 >
 > Jeedom will check the external ip every 15 minutes, if it has
 > changed then the DNS will be updated
@@ -76,8 +76,8 @@ Below you find the list of orders :
 > do not abuse it because you may be temporarily banned from the service
 > DNS
 
-> **NOTE**
+> **Note**
 >
 > If you use OVH, be careful the username is in the form
 > my field.com-identifier while the domain is well under the
-> form mon-dynHost.mmy field.com
+> form mon-dynHost.mmondomaine.com

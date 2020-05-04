@@ -22,7 +22,7 @@ equipos) :
 
 ![dyndns3](../images/dyndns3.PNG)
 
-> **Punta**
+> **Tip**
 >
 > Como en muchos lugares de Jeedom, coloca el mouse en el extremo izquierdo
 > muestra un menú de acceso rápido (puede, en
@@ -34,8 +34,8 @@ Una vez que haces clic en uno de ellos, obtienes :
 
 Aquí encontrarás toda la configuración de tu equipo :
 
--   **Nombrebre del equipo de ** : nombre de su equipo
-    ,
+-   **Nombre del equipo de Ambilight** : nombre de su equipo
+    Ambilight,
 
 -   **Objeto padre** : indica el objeto padre al que pertenece
     equipo,
@@ -43,41 +43,41 @@ Aquí encontrarás toda la configuración de tu equipo :
 -   **Categoría** : categorías de equipos (puede pertenecer a
     categorías múltiples),
 
--   **Activar** : activa su equipo,
+-   **Activer** : activa su equipo,
 
 -   **Visible** : hace que su equipo sea visible en el tablero,
 
--   **Servicio** : El nombre del servicio utilizado (dyndns.
+-   **Service** : El nombre del servicio utilizado (dyndns.org, noip.com)
 
--   **Nombrebre de host** : Nombrebre DNS completo para actualizar (por ejemplo, toto.ddns.net)
+-   **Hostname** : Nombre DNS completo para actualizar (por ejemplo, toto.ddns.net)
 
--   **Nombrebre de usuario** : nombre de usuario en el servicio en cuestión
+-   **Nombre de usuario** : nombre de usuario en el servicio en cuestión
 
 -   **Contraseña** : contraseña en el servicio en cuestión
 
--   **Simbólico** : ficha utilizada para duckdns
+-   **Token** : ficha utilizada para duckdns
 
 A continuación encontrará la lista de pedidos. :
 
--   **Nombre** : el nombre que se muestra en el tablero,
+-   **Nom** : el nombre que se muestra en el tablero,
 
--   **Mostrar** : permite mostrar los datos en el tablero,
+-   **Afficher** : permite mostrar los datos en el tablero,
 
--   **Probar** : Se usa para probar el comando
+-   **Tester** : Se usa para probar el comando
 
-> **Nota**
+> **Note**
 >
 > Jeedom verificará la ip externa cada 15 minutos, si tiene
 > cambiado, luego se actualizará el DNS
 
-> **Importante**
+> **Important**
 >
 > El complemento proporciona un comando para forzar la actualización. Atención a
 > no abuses de él porque puedes ser expulsado temporalmente del servicio
 > DNS
 
-> **Nota**
+> **Note**
 >
 > Si usa OVH, tenga cuidado de que el nombre de usuario esté en el formulario
 > midominio.com-identificador mientras el dominio está bien bajo
-> formulario mon-dynHost.mmidominio.com
+> formulario mon-dynHost.mmondomaine.com
