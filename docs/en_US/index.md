@@ -1,4 +1,4 @@
-This Plugin allows to update a dynamic DNS service
+This plugin allows to update a dynamic DNS service
 (Dyndns, NOIP, duckdns ...)
 
 Plugin configuration 
@@ -17,7 +17,7 @@ Plugin :
 
 ![dyndns2](../images/dyndns2.PNG)
 
-This is what the Dyndns Plugin page looks like (here with already 1
+This is what the Dyndns plugin page looks like (here with already 1
 equipment) :
 
 ![dyndns3](../images/dyndns3.PNG)
@@ -43,7 +43,7 @@ Here you find all the configuration of your equipment :
 -   **Category** : equipment categories (it may belong to
     multiple categories),
 
--   **Activer** : makes your equipment active,
+-   **Activate** : makes your equipment active,
 
 -   **Visible** : makes your equipment visible on the dashboard,
 
@@ -59,24 +59,24 @@ Here you find all the configuration of your equipment :
 
 Below you find the list of orders :
 
--   **Nom** : the name displayed on the dashboard,
+-   **Name** : the name displayed on the dashboard,
 
--   **Afficher** : allows to display the data on the dashboard,
+-   **Show** : allows to display the data on the dashboard,
 
--   **Tester** : Used to test the command
+-   **Test** : Used to test the command
 
-> **Note**
+> **NOTE**
 >
 > Jeedom will check the external ip every 15 minutes, if it has
 > changed then the DNS will be updated
 
 > **Important**
 >
-> The Plugin provides a command to force the update. Be careful with
+> The plugin provides a command to force the update. Be careful with
 > do not abuse it because you may be temporarily banned from the service
 > DNS
 
-> **Note**
+> **NOTE**
 >
 > If you use OVH, be careful the username is in the form
 > my field.com-identifier while the domain is well under the

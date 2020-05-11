@@ -22,7 +22,7 @@ equipamento) :
 
 ![dyndns3](../images/dyndns3.PNG)
 
-> **Tip**
+> **Dica**
 >
 > Como em muitos lugares em Jeedom, coloque o mouse na extremidade esquerda
 > abre um menu de acesso rápido (você pode, em
@@ -43,13 +43,13 @@ Aqui você encontra toda a configuração do seu equipamento :
 -   **Categoria** : categorias de equipamentos (pode pertencer a
     várias categorias),
 
--   **Activer** : torna seu equipamento ativo,
+-   **Ativar** : torna seu equipamento ativo,
 
--   **Visible** : torna seu equipamento visível no painel,
+-   **Visivél** : torna seu equipamento visível no painel,
 
--   **Service** : O nome do serviço usado (dyndns.org, noip.com)
+-   **Serviço** : O nome do serviço usado (dyndns.org, noip.com)
 
--   **Hostname** : nome DNS completo a ser atualizado (por exemplo, toto.ddns.net)
+-   **Nome do host** : nome DNS completo a ser atualizado (por exemplo, toto.ddns.net)
 
 -   **Nome de Usuário** : nome de usuário no serviço em questão
 
@@ -59,24 +59,24 @@ Aqui você encontra toda a configuração do seu equipamento :
 
 Abaixo você encontra a lista de pedidos :
 
--   **Nom** : o nome exibido no painel,
+-   **Nome** : o nome exibido no painel,
 
--   **Afficher** : permite exibir os dados no painel,
+-   **Display** : permite exibir os dados no painel,
 
--   **Tester** : permite testar o comando
+-   **Teste** : permite testar o comando
 
-> **Note**
+> **NOTA**
 >
 > O Jeedom irá verificar o ip externo a cada 15 minutos, se houver
 > alterado, o DNS será atualizado
 
-> **Important**
+> **IMPORTANTE**
 >
 > O plug-in fornece um comando para forçar a atualização. Preste atenção em
 > não abuse, porque você pode ser temporariamente banido do serviço
 > DNS
 
-> **Note**
+> **NOTA**
 >
 > Se você usa OVH, tenha cuidado com o nome de usuário no formato
 > mondomain.identificador de com enquanto o domínio está bem abaixo do

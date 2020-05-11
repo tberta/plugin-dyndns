@@ -1,7 +1,7 @@
 Este complemento permite actualizar un servicio DNS dinámico
 (Dyndns, NOIP, duckdns ...)
 
-Configuración del Plugin 
+Configuración del plugin 
 =======================
 
 Después de descargar el complemento, solo necesita activarlo,
@@ -22,7 +22,7 @@ equipos) :
 
 ![dyndns3](../images/dyndns3.PNG)
 
-> **Tip**
+> **Punta**
 >
 > Como en muchos lugares de Jeedom, coloca el mouse en el extremo izquierdo
 > muestra un menú de acceso rápido (puede, en
@@ -43,40 +43,40 @@ Aquí encontrarás toda la configuración de tu equipo :
 -   **Categoría** : categorías de equipos (puede pertenecer a
     categorías múltiples),
 
--   **Activer** : activa su equipo,
+-   **Activar** : activa su equipo,
 
 -   **Visible** : hace que su equipo sea visible en el tablero,
 
--   **Service** : El nombre del servicio utilizado (dyndns.org, noip.com)
+-   **Servicio** : El nombre del servicio utilizado (dyndns.org, noip.com)
 
--   **Hostname** : Nombre DNS completo para actualizar (por ejemplo, toto.ddns.net)
+-   **Nombre de host** : Nombre DNS completo para actualizar (por ejemplo, toto.ddns.net)
 
 -   **Nombre de usuario** : nombre de usuario en el servicio en cuestión
 
 -   **Contraseña** : contraseña en el servicio en cuestión
 
--   **Token** : ficha utilizada para duckdns
+-   **Simbólico** : ficha utilizada para duckdns
 
 A continuación encontrará la lista de pedidos. :
 
--   **Nom** : el nombre que se muestra en el tablero,
+-   **Nombre** : el nombre que se muestra en el tablero,
 
--   **Afficher** : permite mostrar los datos en el tablero,
+-   **Mostrar** : permite mostrar los datos en el tablero,
 
--   **Tester** : Se usa para probar el comando
+-   **Probar** : Se usa para probar el comando
 
-> **Note**
+> **Nota**
 >
 > Jeedom verificará la ip externa cada 15 minutos, si tiene
 > cambiado, luego se actualizará el DNS
 
-> **Important**
+> **Importante**
 >
 > El complemento proporciona un comando para forzar la actualización. Atención a
 > no abuses de él porque puedes ser expulsado temporalmente del servicio
 > DNS
 
-> **Note**
+> **Nota**
 >
 > Si usa OVH, tenga cuidado de que el nombre de usuario esté en el formulario
 > midominio.com-identificador mientras el dominio está bien bajo

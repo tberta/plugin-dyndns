@@ -22,7 +22,7 @@ Ausrüstung) :
 
 ![dyndns3](../images/dyndns3.PNG)
 
-> **Tip**
+> **Spitze**
 >
 > Platzieren Sie wie an vielen Stellen in Jeedom die Maus ganz links
 > ruft ein Schnellzugriffsmenü auf (Sie können unter
@@ -43,40 +43,40 @@ Hier finden Sie die gesamte Konfiguration Ihrer Geräte :
 -   **Kategorie** : Gerätekategorien (es kann gehören
     mehrere Kategorien),
 
--   **Activer** : macht Ihre Ausrüstung aktiv,
+-   **Aktivieren** : macht Ihre Ausrüstung aktiv,
 
--   **Visible** : macht Ihre Ausrüstung auf dem Armaturenbrett sichtbar,
+-   **Sichtbar** : macht Ihre Ausrüstung auf dem Armaturenbrett sichtbar,
 
 -   **Service** : Der Name des verwendeten Dienstes (dyndns.org, noip.com)
 
--   **Hostname** : vollständiger zu aktualisierender DNS-Name (z. B. toto.ddns.net)
+-   **Host-Namen** : vollständiger zu aktualisierender DNS-Name (z. B. toto.ddns.net)
 
 -   **Benutzername** : Benutzername des betreffenden Dienstes
 
 -   **Passwort** : Passwort für den betreffenden Dienst
 
--   **Token** : Zeichen für Enten
+-   **Zeichen** : Token für Enten
 
 Nachfolgend finden Sie die Liste der Bestellungen :
 
--   **Nom** : Der im Dashboard angezeigte Name,
+-   **Name** : Der im Dashboard angezeigte Name,
 
--   **Afficher** : ermöglicht die Anzeige der Daten im Dashboard,
+-   **Anzeige** : ermöglicht die Anzeige der Daten im Dashboard,
 
--   **Tester** : Wird zum Testen des Befehls verwendet
+-   **Test** : Wird zum Testen des Befehls verwendet
 
-> **Note**
+> **Notiz**
 >
 > Jeedom überprüft die externe IP alle 15 Minuten, falls vorhanden
 > geändert, dann wird der DNS aktualisiert
 
-> **Important**
+> **Wichtig**
 >
 > Das Plugin bietet einen Befehl zum Erzwingen der Aktualisierung. Achten Sie darauf
 > Missbrauche es nicht, da du möglicherweise vorübergehend vom Dienst ausgeschlossen wirst
 > DNS
 
-> **Note**
+> **Notiz**
 >
 > Wenn Sie OVH verwenden, achten Sie darauf, dass der Benutzername im Formular enthalten ist
 > mydomain.com-ID, während sich die Domain weit unter dem befindet
