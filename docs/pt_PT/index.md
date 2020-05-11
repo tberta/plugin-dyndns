@@ -34,7 +34,7 @@ Depois de clicar em um deles, você obtém :
 
 Aqui você encontra toda a configuração do seu equipamento :
 
--   **Nome do equipamento Ambilight** : nome do seu equipamento
+-   **Nome de o equipamento Ambilight** : nome do seu equipamento
     Ambilight,
 
 -   **Objeto pai** : indica o objeto pai ao qual pertence
@@ -51,7 +51,7 @@ Aqui você encontra toda a configuração do seu equipamento :
 
 -   **Nome do host** : nome DNS completo a ser atualizado (por exemplo, toto.ddns.net)
 
--   **Nome de Usuário** : nome de usuário no serviço em questão
+-   **Nome d'utilisateur** : nome de usuário no serviço em questão
 
 -   **Senha** : senha no serviço em questão
 

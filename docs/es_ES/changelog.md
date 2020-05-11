@@ -8,7 +8,7 @@
 
 # 04/17/2019
 
-- Corrección de un error en el icono del equipo.
+- Corrección de un error en el icono del equipo
 
 # 12/20/2018
 

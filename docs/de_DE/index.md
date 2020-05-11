@@ -34,7 +34,7 @@ Sobald Sie auf eine davon klicken, erhalten Sie :
 
 Hier finden Sie die gesamte Konfiguration Ihrer Geräte :
 
--   **Name der Ambilight-Ausrüstung** : Name Ihrer Ausrüstung
+-   **Name de Ausrüstung Ambilight** : Name Ihrer Ausrüstung
     Ambilight,
 
 -   **Übergeordnetes Objekt** : gibt das übergeordnete Objekt an, zu dem es gehört
@@ -51,7 +51,7 @@ Hier finden Sie die gesamte Konfiguration Ihrer Geräte :
 
 -   **Host-Namen** : vollständiger zu aktualisierender DNS-Name (z. B. toto.ddns.net)
 
--   **Benutzername** : Benutzername des betreffenden Dienstes
+-   **Name d'utilisateur** : Benutzername des betreffenden Dienstes
 
 -   **Passwort** : Passwort für den betreffenden Dienst
 

@@ -34,7 +34,7 @@ Una vez que haces clic en uno de ellos, obtienes :
 
 Aquí encontrarás toda la configuración de tu equipo :
 
--   **Nombre del equipo de Ambilight** : nombre de su equipo
+-   **Nombre de equipo Ambilight** : nombre de su equipo
     Ambilight,
 
 -   **Objeto padre** : indica el objeto padre al que pertenece
@@ -51,13 +51,13 @@ Aquí encontrarás toda la configuración de tu equipo :
 
 -   **Nombre de host** : Nombre DNS completo para actualizar (por ejemplo, toto.ddns.net)
 
--   **Nombre de usuario** : nombre de usuario en el servicio en cuestión
+-   **Nombre d'utilisateur** : nombre de usuario en el servicio en cuestión
 
 -   **Contraseña** : contraseña en el servicio en cuestión
 
 -   **Simbólico** : ficha utilizada para duckdns
 
-A continuación encontrará la lista de pedidos. :
+A continuación encontrará la lista de pedidos :
 
 -   **Nombre** : el nombre que se muestra en el tablero,
 

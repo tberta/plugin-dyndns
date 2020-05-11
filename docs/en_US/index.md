@@ -34,7 +34,7 @@ Once you click on one of them, you get :
 
 Here you find all the configuration of your equipment :
 
--   **Ambilight equipment name** : name of your equipment
+-   **Name de equipment Ambilight** : name of your equipment
     Ambilight,
 
 -   **Parent object** : indicates the parent object to which belongs
@@ -51,7 +51,7 @@ Here you find all the configuration of your equipment :
 
 -   **Hostname** : full DNS name to update (eg toto.ddns.net)
 
--   **Username** : username on the service in question
+-   **Name d'utilisateur** : username on the service in question
 
 -   **Password** : password on the service in question
 
