@@ -1,3 +1,7 @@
+>**Wichtig**
+>
+>Zur Erinnerung: Wenn keine Informationen zum Update vorhanden sind, bedeutet dies, dass es sich nur um die Aktualisierung von Dokumentation, Übersetzung oder Text handelt
+
 # 2020.01.13
 
 - Verbesserung und Fehlerbehebung für Jeedom V4
