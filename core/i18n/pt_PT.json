@@ -39,5 +39,8 @@
         "Erreur de mise à jour de ovh.com : ": "Erro de atualização do Ovh.com:",
         "Erreur de mise à jour de duckdns : ' . $url": "Erro ao atualizar duckdns: '. $ url",
         "Erreur de mise à jour de strato.com : ": "Erro ao atualizar strato.com:"
+    },
+    "info.json": {
+        "Plugin pour mettre à jour dynamiquement des DNS": "Plug-in para atualizar dinamicamente o DNS"
     }
 }
