@@ -41,7 +41,7 @@ class dyndns extends eqLogic {
 
 	public static function cron15($_eqLogic_id = null, $_force = false) {
 		if ($_eqLogic_id == null) {
-			$eqLogics = self::byType('dyndns');
+			$eqLogics = self::byType('dyndns',true);
 		} else {
 			$eqLogics = array(self::byId($_eqLogic_id));
 		}
