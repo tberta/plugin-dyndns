@@ -7,6 +7,8 @@
 # 27/07/2021
 
 - Correction d'un bug sur la mise à jour des équipements désactivés
+- Support de Gandi (merci @mildis)
+- Correction de l'url pour noipcom (merci @Pulpyyyy)
 
 # 13/01/2020
 
