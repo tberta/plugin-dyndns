@@ -105,7 +105,7 @@ class dyndns extends eqLogic {
 				}
 				break;
 			case 'noipcom':
-				$url = 'https://' . '@dynupdate.no-ip.com/nic/update?hostname=' . $this->getConfiguration('hostname') . '&myip=' . $ip;
+				$url = 'https://dynupdate.no-ip.com/nic/update?hostname=' . $this->getConfiguration('hostname') . '&myip=' . $ip;
 				$request_http = new com_http($url,$this->getConfiguration('username'),$this->getConfiguration('password'));           	
 				$request_http->setUserAgent('Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.12) Gecko/20070508 Firefox/1.5.0.12');
 				$result = $request_http->exec();
