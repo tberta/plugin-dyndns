@@ -3,7 +3,7 @@
         "401 - Accès non autorisé": "401-不正アクセス",
         "Gestion": "管理",
         "Ajouter": "加えます",
-        "Mes dyndns": "",
+        "Mes dyndns": "Mes dyndns",
         "Rechercher": "検索",
         "Configuration avancée": "高度な構成",
         "Dupliquer": "重複",
@@ -11,17 +11,18 @@
         "Supprimer": "取り除きます",
         "Equipement": "設備",
         "Commandes": "コマンド",
-        "Nom de l'équipement dyndns": "",
+        "Nom de l'équipement dyndns": "Nom de l'équipement dyndns",
         "Objet parent": "親オブジェクト",
         "Aucun": "何でもありません",
         "Catégorie": "カテゴリ",
         "Activer": "アクティブ",
         "Visible": "目に見えます",
-        "Service": "",
-        "Hostname": "",
+        "Service": "Service",
+        "Hostname": "Hostname",
+        "Domainname": "Domainname",
         "Nom d'utilisateur": "ユーザー名",
         "Mot de passe": "パスワード",
-        "Token": "",
+        "Token": "Token",
         "Nom": "表題",
         "Type": "タイプ",
         "Action": "アクション"
@@ -32,15 +33,16 @@
     },
     "plugins\/dyndns\/core\/class\/dyndns.class.php": {
         "Mettre à jour": "更新する",
-        "IP": "",
-        "Commande externalIP inexistante": "",
-        "Erreur de mise à jour de dyndns.org : ": "",
-        "Erreur de mise à jour de noip.com : ": "",
-        "Erreur de mise à jour de ovh.com : ": "",
-        "Erreur de mise à jour de duckdns : ' . $url": "",
-        "Erreur de mise à jour de strato.com : ": ""
+        "IP": "IP",
+        "Commande externalIP inexistante": "Commande externalIP inexistante",
+        "Erreur de mise à jour de dyndns.org : ": "Erreur de mise à jour de dyndns.org :",
+        "Erreur de mise à jour de noip.com : ": "Erreur de mise à jour de noip.com :",
+        "Erreur de mise à jour de ovh.com : ": "Erreur de mise à jour de ovh.com :",
+        "Erreur de mise à jour de duckdns : ' . $url": "Erreur de mise à jour de duckdns : ' . $url",
+        "Erreur de mise à jour de strato.com : ": "Erreur de mise à jour de strato.com :",
+        "Erreur de mise à jour de gandinet : ' . $url": "Erreur de mise à jour de gandinet : ' . $url"
     },
     "info.json": {
-        "Plugin pour mettre à jour dynamiquement des DNS": ""
+        "Plugin pour mettre à jour dynamiquement des DNS": "Plugin pour mettre à jour dynamiquement des DNS"
     }
 }

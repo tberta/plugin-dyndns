@@ -3,7 +3,7 @@
         "401 - Accès non autorisé": "401 - Несанкционированный доступ",
         "Gestion": "Управление",
         "Ajouter": "Добавить",
-        "Mes dyndns": "",
+        "Mes dyndns": "Mes dyndns",
         "Rechercher": "поиск",
         "Configuration avancée": "Расширенные настройки",
         "Dupliquer": "дубликат",
@@ -11,17 +11,18 @@
         "Supprimer": "удаление",
         "Equipement": "Оборудование",
         "Commandes": "Команды",
-        "Nom de l'équipement dyndns": "",
+        "Nom de l'équipement dyndns": "Nom de l'équipement dyndns",
         "Objet parent": "Родительский объект",
         "Aucun": "Нет",
         "Catégorie": "категория",
         "Activer": "активировать",
         "Visible": "Видимый",
-        "Service": "",
-        "Hostname": "",
+        "Service": "Service",
+        "Hostname": "Hostname",
+        "Domainname": "Domainname",
         "Nom d'utilisateur": "Имя пользователя",
         "Mot de passe": "Пароль",
-        "Token": "",
+        "Token": "Token",
         "Nom": "Имя",
         "Type": "Тип",
         "Action": "Действие"
@@ -32,15 +33,16 @@
     },
     "plugins\/dyndns\/core\/class\/dyndns.class.php": {
         "Mettre à jour": "Обновление",
-        "IP": "",
-        "Commande externalIP inexistante": "",
-        "Erreur de mise à jour de dyndns.org : ": "",
-        "Erreur de mise à jour de noip.com : ": "",
-        "Erreur de mise à jour de ovh.com : ": "",
-        "Erreur de mise à jour de duckdns : ' . $url": "",
-        "Erreur de mise à jour de strato.com : ": ""
+        "IP": "IP",
+        "Commande externalIP inexistante": "Commande externalIP inexistante",
+        "Erreur de mise à jour de dyndns.org : ": "Erreur de mise à jour de dyndns.org :",
+        "Erreur de mise à jour de noip.com : ": "Erreur de mise à jour de noip.com :",
+        "Erreur de mise à jour de ovh.com : ": "Erreur de mise à jour de ovh.com :",
+        "Erreur de mise à jour de duckdns : ' . $url": "Erreur de mise à jour de duckdns : ' . $url",
+        "Erreur de mise à jour de strato.com : ": "Erreur de mise à jour de strato.com :",
+        "Erreur de mise à jour de gandinet : ' . $url": "Erreur de mise à jour de gandinet : ' . $url"
     },
     "info.json": {
-        "Plugin pour mettre à jour dynamiquement des DNS": ""
+        "Plugin pour mettre à jour dynamiquement des DNS": "Plugin pour mettre à jour dynamiquement des DNS"
     }
 }

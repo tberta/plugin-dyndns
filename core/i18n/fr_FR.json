@@ -19,6 +19,7 @@
         "Visible": "Visible",
         "Service": "Service",
         "Hostname": "Hostname",
+        "Domainname": "Domainname",
         "Nom d'utilisateur": "Nom d'utilisateur",
         "Mot de passe": "Mot de passe",
         "Token": "Token",
@@ -38,7 +39,8 @@
         "Erreur de mise à jour de noip.com : ": "Erreur de mise à jour de noip.com : ",
         "Erreur de mise à jour de ovh.com : ": "Erreur de mise à jour de ovh.com : ",
         "Erreur de mise à jour de duckdns : ' . $url": "Erreur de mise à jour de duckdns : ' . $url",
-        "Erreur de mise à jour de strato.com : ": "Erreur de mise à jour de strato.com : "
+        "Erreur de mise à jour de strato.com : ": "Erreur de mise à jour de strato.com : ",
+        "Erreur de mise à jour de gandinet : ' . $url": "Erreur de mise à jour de gandinet : ' . $url"
     },
     "info.json": {
         "Plugin pour mettre à jour dynamiquement des DNS": "Plugin pour mettre à jour dynamiquement des DNS"
