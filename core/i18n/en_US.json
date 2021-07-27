@@ -19,6 +19,7 @@
         "Visible": "Visible",
         "Service": "Service",
         "Hostname": "Hostname",
+        "Domainname": "Domainname",
         "Nom d'utilisateur": "Username",
         "Mot de passe": "Password",
         "Token": "Token",

@@ -19,6 +19,7 @@
         "Visible": "Görülebilir",
         "Service": "",
         "Hostname": "",
+        "Domainname": "",
         "Nom d'utilisateur": "Kullanıcı adı",
         "Mot de passe": "Şifre",
         "Token": "",
