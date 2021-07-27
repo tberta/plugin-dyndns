@@ -4,6 +4,10 @@
 >
 >Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte
 
+# 27/07/2021
+
+- Correction d'un bug sur la mise à jour des équipements désactivés
+
 # 13/01/2020
 
 - Amélioration et correction de bug pour jeedom V4
