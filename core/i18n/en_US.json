@@ -32,6 +32,8 @@
         "Tester": "Test"
     },
     "plugins\/dyndns\/core\/class\/dyndns.class.php": {
+        "Erreur lors de la requete au serveur cloud Jeedom : ": "Error when requesting the Jeedom cloud server:",
+        "impossible de recuperer votre ip externe : ": "impossible to recover your external ip:",
         "Mettre à jour": "Update",
         "IP": "IP",
         "Commande externalIP inexistante": "External Ip command not found",
