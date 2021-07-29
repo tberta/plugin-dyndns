@@ -38,7 +38,10 @@ class dyndns extends eqLogic {
 		if(isset($return['state']) && $return['state'] != 'ok'){
 		      throw new \Exception(__('Erreur lors de la requete au serveur cloud Jeedom : ',__FILE__).json_encode($return));
 		}
-		return $return['ip'];
+		if(isset($return['data']) && isset($return['data']['ip'])){
+			return $return['data']['ip'];
+		}
+		throw new \Exception(__('impossible de recuperer votre ip externe : ',__FILE__).json_encode($return));
 	}
 
 	public static function cron15($_eqLogic_id = null, $_force = false) {
