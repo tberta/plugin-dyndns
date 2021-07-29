@@ -26,16 +26,6 @@ class dyndns extends eqLogic {
 
 	public static function getExternalIP() {
 		try {
-			$request_http = new com_http('http://checkip.dyndns.com/');
-			$externalContent = $request_http->exec(8, 1);
-			preg_match('/Current IP Address: \[?([:.0-9a-fA-F]+)\]?/', $externalContent, $m);
-			if (isset($m[1])) {
-				return $m[1];
-			}
-		} catch (Exception $e) {
-
-		}
-		try {
 			$request_http = new com_http('http://myip.dnsomatic.com/');
 			return $request_http->exec(8, 1);
 		} catch (Exception $e) {
