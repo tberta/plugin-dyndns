@@ -35,8 +35,20 @@ class dyndns extends eqLogic {
 		} catch (Exception $e) {
 
 		}
-		$request_http = new com_http('http://myip.dnsomatic.com/');
-		return $request_http->exec(8, 1);
+		try {
+			$request_http = new com_http('http://myip.dnsomatic.com/');
+			return $request_http->exec(8, 1);
+		} catch (Exception $e) {
+
+		}
+		$url = config::byKey('service::cloud::url').'/service/myip';
+      		$request_http = new com_http($url);
+      		$request_http->setHeader(array('Content-Type: application/json','Autorization: '.sha512(mb_strtolower(config::byKey('market::username')).':'.config::byKey('market::password'))));
+      		$result = json_decode($request_http->exec(30,1),true);
+		if(isset($return['state']) && $return['state'] != 'ok'){
+		      throw new \Exception(__('Erreur lors de la requete au serveur cloud Jeedom : ',__FILE__).json_encode($return));
+		}
+		return $return['ip'];
 	}
 
 	public static function cron15($_eqLogic_id = null, $_force = false) {
