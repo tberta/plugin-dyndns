@@ -25,12 +25,6 @@ class dyndns extends eqLogic {
 	/*     * ***********************Methode static*************************** */
 
 	public static function getExternalIP() {
-		try {
-			$request_http = new com_http('http://myip.dnsomatic.com/');
-			return $request_http->exec(8, 1);
-		} catch (Exception $e) {
-
-		}
 		$url = config::byKey('service::cloud::url').'/service/myip';
       		$request_http = new com_http($url);
       		$request_http->setHeader(array('Content-Type: application/json','Autorization: '.sha512(mb_strtolower(config::byKey('market::username')).':'.config::byKey('market::password'))));
