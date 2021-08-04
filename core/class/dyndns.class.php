@@ -36,7 +36,7 @@ class dyndns extends eqLogic {
 		if(isset($return['data']) && isset($return['data']['ip'])){
 			return $return['data']['ip'];
 		}
-		throw new \Exception(__('impossible de recuperer votre ip externe : ',__FILE__).json_encode($data));
+		throw new \Exception(__('impossible de recuperer votre ip externe : ',__FILE__).$data);
 	}
 
 	public static function cron15($_eqLogic_id = null, $_force = false) {
