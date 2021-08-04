@@ -30,11 +30,11 @@ class dyndns extends eqLogic {
       		$request_http->setHeader(array('Content-Type: application/json','Autorization: '.sha512(mb_strtolower(config::byKey('market::username')).':'.config::byKey('market::password'))));
       		$data = $request_http->exec(30,1);
 		$result = is_json($data, $data);
-		if(isset($return['state']) && $return['state'] != 'ok'){
+		if(isset($result['state']) && $result['state'] != 'ok'){
 		      throw new \Exception(__('Erreur lors de la requete au serveur cloud Jeedom : ',__FILE__).$data);
 		}
-		if(isset($return['data']) && isset($return['data']['ip'])){
-			return $return['data']['ip'];
+		if(isset($result['data']) && isset($result['data']['ip'])){
+			return $result['data']['ip'];
 		}
 		throw new \Exception(__('impossible de recuperer votre ip externe : ',__FILE__).$data);
 	}
