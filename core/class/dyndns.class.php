@@ -28,14 +28,15 @@ class dyndns extends eqLogic {
 		$url = config::byKey('service::cloud::url').'/service/myip';
       		$request_http = new com_http($url);
       		$request_http->setHeader(array('Content-Type: application/json','Autorization: '.sha512(mb_strtolower(config::byKey('market::username')).':'.config::byKey('market::password'))));
-      		$result = json_decode($request_http->exec(30,1),true);
+      		$data = $request_http->exec(30,1);
+		$result = is_json($data, $data);
 		if(isset($return['state']) && $return['state'] != 'ok'){
-		      throw new \Exception(__('Erreur lors de la requete au serveur cloud Jeedom : ',__FILE__).json_encode($return));
+		      throw new \Exception(__('Erreur lors de la requete au serveur cloud Jeedom : ',__FILE__).$data);
 		}
 		if(isset($return['data']) && isset($return['data']['ip'])){
 			return $return['data']['ip'];
 		}
-		throw new \Exception(__('impossible de recuperer votre ip externe : ',__FILE__).json_encode($return));
+		throw new \Exception(__('impossible de recuperer votre ip externe : ',__FILE__).json_encode($data));
 	}
 
 	public static function cron15($_eqLogic_id = null, $_force = false) {
