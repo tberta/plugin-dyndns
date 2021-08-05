@@ -4,6 +4,10 @@
 >
 >Como lembrete, se não houver informações sobre a atualização, isso significa que se trata apenas da atualização da documentação, tradução ou texto
 
+# 05/08/2021
+
+- Correção do erro "429 Muitas solicitações""
+
 # 27/07/2021
 
 - Corrigido um bug na atualização de equipamentos desativados

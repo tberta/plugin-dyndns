@@ -2,6 +2,8 @@
     "changelog.md": {
         "Changelog Dyndns": "Changelog dyndns",
         "Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte": "As a reminder if there is no information on the update, it means that it only concerns the updating of documentation, translation or text",
+        "05\/08\/2021": "08\/05\/2021",
+        "Correction de l'erreur \"429 Too Many Requests": "Fixed \"429 Too Many Requests\" error",
         "27\/07\/2021": "07\/27\/2021",
         "Correction d'un bug sur la mise à jour des équipements désactivés": "Fixed a bug on updating disabled equipment",
         "Support de Gandi (merci @mildis": "Gandi support (thanks @mildis",

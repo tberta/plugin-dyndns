@@ -4,6 +4,10 @@
 >
 >As a reminder if there is no information on the update, it means that it only concerns the updating of documentation, translation or text
 
+# 08/05/2021
+
+- Fixed "429 Too Many Requests" error"
+
 # 07/27/2021
 
 - Fixed a bug on updating disabled equipment
