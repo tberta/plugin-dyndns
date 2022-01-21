@@ -53,3 +53,8 @@ En-dessous vous retrouvez la liste des commandes :
 > **Note**
 >
 > Si vous utilisez OVH, attention le nom d’utilisateur est de la forme mondomaine.com-identificant alors que le domaine est bien sous la forme mon-dynHost.mmondomaine.com
+
+> **IPv6**
+>
+> Vous devez avoir configuré dans votre **Service** une entrée DNS de type AAAA pour votre **Hostname**
+>
