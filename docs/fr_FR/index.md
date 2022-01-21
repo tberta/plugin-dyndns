@@ -56,5 +56,5 @@ En-dessous vous retrouvez la liste des commandes :
 
 > **IPv6**
 >
-> Vous devez avoir configuré dans votre **Service** une entrée DNS de type AAAA pour votre **Hostname**
->
+> Vous devez avoir configuré dans votre **Service** une entrée DNS de type AAAA pour votre **Hostname**.
+> Tous les **Service** ne supportent pas ou ne fournissent pas les informations pour IPv6.
