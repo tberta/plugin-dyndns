@@ -34,6 +34,7 @@ Vous retrouvez ici toute la configuration de votre équipement :
 -   **Nom d’utilisateur** : nom d’utilisateur sur le service en question
 -   **Mot de passer** : mot de passe sur le service en question
 -   **Token** : token utilisé pour duckdns
+-   **IPv6** : Votre **Service** supporte IPv6. Sélectionnez si vous désirez mettre à jour votre entrée **Hostname** de type AAAA.
 
 En-dessous vous retrouvez la liste des commandes :
 
