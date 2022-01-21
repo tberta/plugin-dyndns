@@ -34,10 +34,28 @@ class dyndns extends eqLogic {
 		      throw new \Exception(__('Erreur lors de la requete au serveur cloud Jeedom : ',__FILE__).$data);
 		}
 		if(isset($result['data']) && isset($result['data']['ip'])){
+			//log::add('dyndns','debug','getExternalIP  result: ' . $result['data']['ip']);
 			return $result['data']['ip'];
 		}
 		throw new \Exception(__('impossible de recuperer votre ip externe : ',__FILE__).$data);
 	}
+
+	public static function getExternalIP6() {
+		try {
+			$request_http = new com_http('http://checkipv6.dyndns.com');
+			$externalContent = $request_http->exec(8, 1);
+			preg_match('/(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4})/', $externalContent, $m);
+			//log::add('dyndns','debug','Match: ---' . $m[1] .'+++' );
+			if (isset($m[1])) {
+				return $m[1];
+			}
+		} catch (Exception $e) {
+
+		}
+		$request_http = new com_http('http://ip1.dynupdate6.no-ip.com/');
+		return $request_http->exec(8, 1);
+	}
+
 
 	public static function cron15($_eqLogic_id = null, $_force = false) {
 		if ($_eqLogic_id == null) {
@@ -51,17 +69,73 @@ class dyndns extends eqLogic {
 			if (!is_object($externalIP)) {
 				continue;
 			}
-			if ($_force || $externalIP->execCmd() != $externalIP->formatValue($current_externalIP)) {
+			$ip = $externalIP->execCmd();
+			if ($_force || $ip != $externalIP->formatValue($current_externalIP)) {
+				log::add('dyndns','debug','IP sauvee: ' .$ip. ', IP courante: ' . $externalIP->formatValue($current_externalIP) );
 				$externalIP->setCollectDate('');
 				$externalIP->event($current_externalIP);
+				log::add('dyndns','debug','Mise à jour de l\'adresse IP:' );
 				$eqLogic->updateIP();
+			}
+		}
+		//$current_externalIP6 = self::getExternalIP6();
+		foreach ($eqLogics as $eqLogic) {
+			$externalIP6 = $eqLogic->getCmd(null, 'externalIP6');
+			if (!is_object($externalIP6)) {
+				continue;
+			}
+			if ($eqLogic->getConfiguration("ipv6") > 0){
+				$current_externalIP6 = self::getExternalIP6();
+				if ($_force || $externalIP6->execCmd() != $externalIP6->formatValue($current_externalIP6)) {
+					$externalIP6->setCollectDate('');
+					$externalIP6->event($current_externalIP6);
+					$eqLogic->updateIP();
+				}
 			}
 		}
 	}
 
+	public static function testip($_eqLogic_id = null) {
+		if ($_eqLogic_id == null) {
+			$eqLogics = self::byType('dyndns');
+		} else {
+			$eqLogics = array(self::byId($_eqLogic_id));
+		}
+
+		$current_externalIP = self::getExternalIP();
+		//log::add('dyndns','debug','External IPv4: ' . $current_externalIP);
+
+		foreach ($eqLogics as $eqLogic) {
+			$externalIP6 = $eqLogic->getCmd(null, 'externalIP6');
+			if (!is_object($externalIP6)) {
+				continue;
+			}
+			if ($eqLogic->getConfiguration("ipv6") > 0){
+				$current_externalIP6 = self::getExternalIP6();
+				//log::add('dyndns','debug','External IPv6: ' . $current_externalIP6);
+			}
+		}
+	}
+
+
+
+
 	/*     * *********************Méthodes d'instance************************* */
 
 	public function postSave() {
+		$testip = $this->getCmd(null, 'testip');
+		if (!is_object($testip)) {
+			$testip = new dyndnsCmd();
+			$testip->setLogicalId('testip');
+			$testip->setIsVisible(1);
+			$testip->setName(__('Tester IP', __FILE__));
+		}
+		$testip->setType('action');
+		$testip->setSubType('other');
+		$testip->setEqLogic_id($this->getId());
+		$testip->save();
+		self::testip($this->getId());
+
 		$update = $this->getCmd(null, 'update');
 		if (!is_object($update)) {
 			$update = new dyndnsCmd();
@@ -86,7 +160,22 @@ class dyndns extends eqLogic {
 		$externalIP->setEqLogic_id($this->getId());
 		$externalIP->save();
 		self::cron15($this->getId());
+
+		$externalIP6 = $this->getCmd(null, 'externalIP6');
+		if (!is_object($externalIP6)) {
+			$externalIP6 = new dyndnsCmd();
+			$externalIP6->setLogicalId('externalIP6');
+			$externalIP6->setIsVisible(1);
+			$externalIP6->setName(__('IPv6', __FILE__));
+		}
+		$externalIP6->setType('info');
+		$externalIP6->setSubType('string');
+		$externalIP6->setEqLogic_id($this->getId());
+		$externalIP6->save();
+		self::cron15($this->getId());
+
 	}
+
 
 	public function updateIP() {
 		$externalIP = $this->getCmd(null, 'externalIP');
@@ -94,6 +183,14 @@ class dyndns extends eqLogic {
 			throw new Exception(__('Commande externalIP inexistante', __FILE__));
 		}
 		$ip = $externalIP->execCmd(null, 2);
+		$flagipv6 = $this->getConfiguration('ipv6');
+		if ($flagipv6) {
+			$externalIP6 = $this->getCmd(null, 'externalIP6');
+			if (!is_object($externalIP6)) {
+				throw new Exception(__('Commande externalIP6 inexistante', __FILE__));
+			}
+			$ip6 = $externalIP6->execCmd(null, 2);
+		}
 		switch ($this->getConfiguration('type')) {
 			case 'dyndnsorg':
 				$url = 'https://' . urlencode($this->getConfiguration('username')) . ':' . urlencode($this->getConfiguration('password')) . '@members.dyndns.org/nic/update?hostname=' . $this->getConfiguration('hostname') . '&myip=' . $ip;
@@ -105,7 +202,12 @@ class dyndns extends eqLogic {
 				}
 				break;
 			case 'noipcom':
-				$url = 'https://dynupdate.no-ip.com/nic/update?hostname=' . $this->getConfiguration('hostname') . '&myip=' . $ip;
+				if ($flagipv6){
+					$url = 'https://dynupdate.no-ip.com/nic/update?hostname=' . $this->getConfiguration('hostname') . '&myip=' . $ip . ',' . $ip6;
+				} else {
+					$url = 'https://dynupdate.no-ip.com/nic/update?hostname=' . $this->getConfiguration('hostname') . '&myip=' . $ip;
+				}
+				log::add('dyndns', 'debug', $url);
 				$request_http = new com_http($url,$this->getConfiguration('username'),$this->getConfiguration('password'));           	
 				$request_http->setUserAgent('Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.12) Gecko/20070508 Firefox/1.5.0.12');
 				$result = $request_http->exec();
@@ -123,7 +225,12 @@ class dyndns extends eqLogic {
 				}
 				break;
       		case 'duckdns':
-				$url = 'https://www.duckdns.org/update?domains=' . $this->getConfiguration('hostname') . '&token=' . $this->getConfiguration('token') . '&ip=' . $ip;
+				if ($flagipv6){
+					$url = 'https://www.duckdns.org/update?domains=' . $this->getConfiguration('hostname') . '&token=' . $this->getConfiguration('token') .'&myip=' . $ip . '&ipv6=' . $ip6;
+				} else {
+					$url = 'https://www.duckdns.org/update?domains=' . $this->getConfiguration('hostname') . '&token=' . $this->getConfiguration('token') .'&myip=' . $ip;
+				}
+				log::add('dyndns', 'debug', $url);
 				$request_http = new com_http($url);
 				$request_http->setUserAgent('Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.12) Gecko/20070508 Firefox/1.5.0.12');
 				$result = $request_http->exec();
@@ -140,7 +247,7 @@ class dyndns extends eqLogic {
       				throw new Exception(__('Erreur de mise à jour de strato.com : ', __FILE__) . $result);
       			}
       			break;
-      		case 'gandinet':
+     		case 'gandinet':
 				$url = 'https://dns.api.gandi.net/api/v5/domains/' . $this->getConfiguration('domainname') . '/records/' . $this->getConfiguration('hostname') .'/A';
 				$payload = array('rrset_type'=>'A','rrset_ttl'=>'3600','rrset_name'=>$this->getConfiguration('hostname'),'rrset_values'=>array($ip));
 				$payload_json = json_encode($payload);
@@ -169,6 +276,9 @@ class dyndnsCmd extends cmd {
 	public function execute($_options = array()) {
 		if ($this->getLogicalId() == 'update') {
 			dyndns::cron15($this->getEqLogic()->getId(), true);
+		}
+	if ($this->getLogicalId() == 'testip') {
+			dyndns::testip($this->getEqLogic()->getId(), true);
 		}
 	}
 

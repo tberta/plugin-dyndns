@@ -96,7 +96,7 @@ foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
                 <option value="nonde">{{Aucun}}</option>
                 <option value="dyndnsorg">www.dyndns.org</option>
                 <option value="noipcom">www.noip.com</option>
-                <option value="ovhcom">www.ovh.com</option>
+				<option value="ovhcom">www.ovh.com</option>
                 <option value="duckdns">www.duckdns.org</option>
                 <option value="stratocom">www.strato.com</option>
                 <option value="gandinet">www.gandi.net</option>
@@ -114,7 +114,7 @@ foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
             <label class="col-sm-3 control-label">{{Domainname}}</label>
             <div class="col-sm-3">
                 <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="domainname" />
-            </div>
+             </div>
         </div>
         <div class="form-group serviceType dyndnsorg noipcom ovhcom stratocom">
             <label class="col-sm-3 control-label">{{Nom d'utilisateur}}</label>
@@ -128,12 +128,20 @@ foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
                 <input type="password" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="password" />
             </div>
         </div>
-				<div class="form-group serviceType duckdns gandinet">
+		<div class="form-group serviceType duckdns gandinet">
             <label class="col-sm-3 control-label">{{Token}}</label>
             <div class="col-sm-3">
                 <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="token" />
             </div>
         </div>
+        <div class="form-group serviceType noipcom duckdns">
+            <label class="col-sm-3 control-label">{{IPv6}}</label>
+            <div class="col-sm-3">
+                <label class="checkbox-inline">
+                	<input type="checkbox" class="eqLogicAttr" data-l1key="configuration" data-l2key="ipv6" /> &nbsp;
+                </label>
+            </div>
+       </div>
     </div>
 </fieldset>
 </form>
