@@ -56,7 +56,6 @@ class dyndns extends eqLogic {
 		return $request_http->exec(8, 1);
 	}
 
-
 	public static function cron15($_eqLogic_id = null, $_force = false) {
 		if ($_eqLogic_id == null) {
 			$eqLogics = self::byType('dyndns',true);
@@ -69,29 +68,32 @@ class dyndns extends eqLogic {
 			if (!is_object($externalIP)) {
 				continue;
 			}
+			$flagUpdate = 0;
 			$ip = $externalIP->execCmd();
 			if ($_force || $ip != $externalIP->formatValue($current_externalIP)) {
-				log::add('dyndns','debug','IP sauvee: ' .$ip. ', IP courante: ' . $externalIP->formatValue($current_externalIP) );
+				log::add('dyndns','debug', __('IP sauvee: ',__FILE__) .$ip . __(', IP courante: ',__FILE__) . $externalIP->formatValue($current_externalIP) );
 				$externalIP->setCollectDate('');
 				$externalIP->event($current_externalIP);
-				log::add('dyndns','debug','Mise à jour de l\'adresse IP:' );
-				$eqLogic->updateIP();
+				log::add('dyndns','debug',__('Mise à jour de l\'adresse IP:',__FILE__) );
+				$flagUpdate = 1;
 			}
-		}
-		//$current_externalIP6 = self::getExternalIP6();
-		foreach ($eqLogics as $eqLogic) {
-			$externalIP6 = $eqLogic->getCmd(null, 'externalIP6');
-			if (!is_object($externalIP6)) {
-				continue;
-			}
+
 			if ($eqLogic->getConfiguration("ipv6") > 0){
 				$current_externalIP6 = self::getExternalIP6();
-				if ($_force || $externalIP6->execCmd() != $externalIP6->formatValue($current_externalIP6)) {
+				$externalIP6 = $eqLogic->getCmd(null, 'externalIP6');
+				$ipv6 = $externalIP6->execCmd();
+				if ($_force || $ipv6 != $externalIP6->formatValue($current_externalIP6)) {
+					log::add('dyndns','debug',  __('IPv6 sauvee: ',__FILE__) . $ipv6 .  __(', IPv6 courante: ',__FILE__) . $externalIP6->formatValue($current_externalIP6) );
 					$externalIP6->setCollectDate('');
 					$externalIP6->event($current_externalIP6);
-					$eqLogic->updateIP();
+					log::add('dyndns','debug',__('Mise à jour de l\'adresse IPv6:',__FILE__) );
+					$flagUpdate = 1;
 				}
 			}
+
+			if ($flagUpdate > 0 ) {
+				$eqLogic->updateIP();
+			}			
 		}
 	}
 
@@ -103,22 +105,13 @@ class dyndns extends eqLogic {
 		}
 
 		$current_externalIP = self::getExternalIP();
-		//log::add('dyndns','debug','External IPv4: ' . $current_externalIP);
+		log::add('dyndns','debug',__('External IPv4: ',__FILE__) . $current_externalIP);
 
-		foreach ($eqLogics as $eqLogic) {
-			$externalIP6 = $eqLogic->getCmd(null, 'externalIP6');
-			if (!is_object($externalIP6)) {
-				continue;
-			}
-			if ($eqLogic->getConfiguration("ipv6") > 0){
-				$current_externalIP6 = self::getExternalIP6();
-				//log::add('dyndns','debug','External IPv6: ' . $current_externalIP6);
-			}
+		if ((self::byId($_eqLogic_id))->getConfiguration("ipv6") > 0){
+			$current_externalIP6 = self::getExternalIP6();
+			log::add('dyndns','debug',__('External IPv6: ',__FILE__) . $current_externalIP6);
 		}
 	}
-
-
-
 
 	/*     * *********************Méthodes d'instance************************* */
 
@@ -134,7 +127,6 @@ class dyndns extends eqLogic {
 		$testip->setSubType('other');
 		$testip->setEqLogic_id($this->getId());
 		$testip->save();
-		self::testip($this->getId());
 
 		$update = $this->getCmd(null, 'update');
 		if (!is_object($update)) {
@@ -159,7 +151,6 @@ class dyndns extends eqLogic {
 		$externalIP->setSubType('string');
 		$externalIP->setEqLogic_id($this->getId());
 		$externalIP->save();
-		self::cron15($this->getId());
 
 		$externalIP6 = $this->getCmd(null, 'externalIP6');
 		if (!is_object($externalIP6)) {
@@ -172,8 +163,8 @@ class dyndns extends eqLogic {
 		$externalIP6->setSubType('string');
 		$externalIP6->setEqLogic_id($this->getId());
 		$externalIP6->save();
-		self::cron15($this->getId());
 
+		self::cron15($this->getId());
 	}
 
 
@@ -277,7 +268,7 @@ class dyndnsCmd extends cmd {
 		if ($this->getLogicalId() == 'update') {
 			dyndns::cron15($this->getEqLogic()->getId(), true);
 		}
-	if ($this->getLogicalId() == 'testip') {
+		if ($this->getLogicalId() == 'testip') {
 			dyndns::testip($this->getEqLogic()->getId(), true);
 		}
 	}
