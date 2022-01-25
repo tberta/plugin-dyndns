@@ -4,6 +4,8 @@
 >
 >As a reminder if there is no information on the update, it means that it only concerns the updating of documentation, translation or text
 
+- IPv6 support (thanks @henribi)
+
 # 08/05/2021
 
 - Fixed "429 Too Many Requests" error"

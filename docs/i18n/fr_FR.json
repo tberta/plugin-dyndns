@@ -3,6 +3,7 @@
         "Changelog Dyndns": "Changelog Dyndns",
         "IMPORTANT": "IMPORTANT",
         "Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte": "Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte",
+        "Support de l'ipv6 (merci @henribi": "Support de l'ipv6 (merci @henribi",
         "05\/08\/2021": "05\/08\/2021",
         "Correction de l'erreur \"429 Too Many Requests": "Correction de l'erreur \"429 Too Many Requests",
         "27\/07\/2021": "27\/07\/2021",
@@ -49,6 +50,11 @@
         "mot de passe sur le service en question": "mot de passe sur le service en question",
         "Token": "Token",
         "token utilisé pour duckdns": "token utilisé pour duckdns",
+        "IPv6": "IPv6",
+        "Votre": "Votre",
+        "supporte IPv6": "supporte IPv6",
+        "Sélectionnez si vous désirez mettre à jour votre entrée": "Sélectionnez si vous désirez mettre à jour votre entrée",
+        "de type AAAA": "de type AAAA",
         "En-dessous vous retrouvez la liste des commandes": "En-dessous vous retrouvez la liste des commandes",
         "Nom": "Nom",
         "le nom affiché sur le dashboard": "le nom affiché sur le dashboard",
@@ -62,6 +68,10 @@
         "Le plugin fournit une commande pour forcer la mise à jour": "Le plugin fournit une commande pour forcer la mise à jour",
         "Attention à ne pas en abuser car vous pouvez être banni temporairement du service de DNS": "Attention à ne pas en abuser car vous pouvez être banni temporairement du service de DNS",
         "Si vous utilisez OVH, attention le nom d'utilisateur est de la forme mondomaine": "Si vous utilisez OVH, attention le nom d'utilisateur est de la forme mondomaine",
-        "com-identificant alors que le domaine est bien sous la forme mon-dynHost.mmondomaine.com": "com-identificant alors que le domaine est bien sous la forme mon-dynHost.mmondomaine.com"
+        "com-identificant alors que le domaine est bien sous la forme mon-dynHost.mmondomaine.com": "com-identificant alors que le domaine est bien sous la forme mon-dynHost.mmondomaine.com",
+        "Vous devez avoir configuré dans votre": "Vous devez avoir configuré dans votre",
+        "une entrée DNS de type AAAA pour votre": "une entrée DNS de type AAAA pour votre",
+        "Tous les": "Tous les",
+        "ne supportent pas ou ne fournissent pas les informations pour IPv6": "ne supportent pas ou ne fournissent pas les informations pour IPv6"
     }
 }
