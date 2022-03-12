@@ -100,10 +100,11 @@ foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
                 <option value="duckdns">www.duckdns.org</option>
                 <option value="stratocom">www.strato.com</option>
                 <option value="gandinet">www.gandi.net</option>
+                <option value="infomaniak">www.infomaniak.com</option>
             </select>
         </div>
     </div>
-    <div class="serviceType dyndnsorg noipcom ovhcom duckdns stratocom gandinet">
+    <div class="serviceType dyndnsorg noipcom ovhcom duckdns stratocom gandinet infomaniak">
         <div class="form-group">
             <label class="col-sm-3 control-label">{{Hostname}}</label>
             <div class="col-sm-3">
@@ -116,13 +117,13 @@ foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
                 <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="domainname" />
              </div>
         </div>
-        <div class="form-group serviceType dyndnsorg noipcom ovhcom stratocom">
+        <div class="form-group serviceType dyndnsorg noipcom ovhcom stratocom infomaniak">
             <label class="col-sm-3 control-label">{{Nom d'utilisateur}}</label>
             <div class="col-sm-3">
                 <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="username" />
             </div>
         </div>
-        <div class="form-group serviceType dyndnsorg noipcom ovhcom stratocom">
+        <div class="form-group serviceType dyndnsorg noipcom ovhcom stratocom infomaniak">
             <label class="col-sm-3 control-label">{{Mot de passe}}</label>
             <div class="col-sm-3">
                 <input type="password" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="password" />
