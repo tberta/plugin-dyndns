@@ -2,6 +2,7 @@
     "changelog.md": {
         "Changelog Dyndns": "Registro de cambios dyndns",
         "Pour rappel s'il n'y a pas d'information sur la mise à jour, c'est que celle-ci concerne uniquement de la mise à jour de documentation, de traduction ou de texte": "Como recordatorio si no hay información sobre la actualización, significa que solo se refiere a la actualización de documentación, traducción o texto",
+        "Support de Infomaniak.com": "Soporte infomaniak.com",
         "Support de l'ipv6 (merci @henribi": "Compatibilidad con IPv6 (gracias @henribi",
         "05\/08\/2021": "05\/08\/2021",
         "Correction de l'erreur \"429 Too Many Requests": "Se corrigió el error \"429 Demasiadas solicitudes\"",

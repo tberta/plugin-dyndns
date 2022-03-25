@@ -54,7 +54,8 @@
         "Erreur de mise à jour de ovh.com : ": "Error de actualización de Ovh.com:",
         "Erreur de mise à jour de duckdns : ' . $url": "Error al actualizar duckdns: '. $ url",
         "Erreur de mise à jour de strato.com : ": "Error al actualizar strato.com:",
-        "Erreur de mise à jour de gandinet : ' . $url": "Error al actualizar gandinet: '. $ url"
+        "Erreur de mise à jour de gandinet : ' . $url": "Error al actualizar gandinet: '. $ url",
+        "Erreur de mise à jour de infomaniak.com : ": "Error de actualización de Infomaniak.com:"
     },
     "info.json": {
         "Plugin pour mettre à jour dynamiquement des DNS": "Complemento para actualizar dinámicamente DNS"
