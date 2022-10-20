@@ -14,43 +14,51 @@
  * You should have received a copy of the GNU General Public License
  * along with Jeedom. If not, see <http://www.gnu.org/licenses/>.
  */
-$('.eqLogicAttr[data-l1key=configuration][data-l2key=type]').on('change', function(){
+$('.eqLogicAttr[data-l1key=configuration][data-l2key=type]').on('change', function () {
     $('.serviceType').hide();
-    $('.serviceType.'+$(this).value()).show();
+    $('.serviceType.' + $(this).value()).show();
 });
 
- function addCmdToTable(_cmd) {
+function addCmdToTable(_cmd) {
     if (!isset(_cmd)) {
-        var _cmd = {configuration: {}};
+        var _cmd = { configuration: {} }
     }
-    var tr = '<tr class="cmd" data-cmd_id="' + init(_cmd.id) + '">';
+    if (!isset(_cmd.configuration)) {
+        _cmd.configuration = {}
+    }
+    var tr = '<tr class="cmd" data-cmd_id="' + init(_cmd.id) + '">'
+    tr += '<td class="hidden-xs">'
+    tr += '<span class="cmdAttr" data-l1key="id"></span>'
+    tr += '<input class="cmdAttr form-control type input-sm" data-l1key="type" value="' + init(_cmd.type) + '" style="display:none;" />';
+    tr += '<input class="cmdAttr form-control type input-sm" data-l1key="subType" value="' + init(_cmd.subType) + '" style="display:none;" />';
+    tr += '</td>'
+    tr += '<td>'
+    tr += '<div class="input-group">'
+    tr += '<input class="cmdAttr form-control input-sm roundedLeft" data-l1key="name" placeholder="{{Nom de la commande}}">'
+    tr += '<span class="input-group-btn"><a class="cmdAction btn btn-sm btn-default" data-l1key="chooseIcon" title="{{Choisir une icône}}"><i class="fas fa-icons"></i></a></span>'
+    tr += '<span class="cmdAttr input-group-addon roundedRight" data-l1key="display" data-l2key="icon" style="font-size:19px;padding:0 5px 0 0!important;"></span>'
+    tr += '</div>'
+    tr += '</td>'
+    tr += '<td>'
+    tr += '<label class="checkbox-inline"><input type="checkbox" class="cmdAttr" data-l1key="isVisible" checked/>{{Afficher}}</label> '
+    tr += '<label class="checkbox-inline"><input type="checkbox" class="cmdAttr" data-l1key="isHistorized" checked/>{{Historiser}}</label> '
+    tr += '<label class="checkbox-inline"><input type="checkbox" class="cmdAttr" data-l1key="display" data-l2key="invertBinary"/>{{Inverser}}</label> '
+    tr += '</td>'
     tr += '<td>';
-    tr += '<input class="cmdAttr form-control input-sm" data-l1key="id" style="display : none;">';
-    tr += '<input class="cmdAttr form-control input-sm" data-l1key="type" style="display : none;">';
-    tr += '<input class="cmdAttr form-control input-sm" data-l1key="subType" style="display : none;">';
-    tr += '<div class="row">';
-    tr += '<div class="col-sm-6">';
-    tr += '<a class="cmdAction btn btn-default btn-sm" data-l1key="chooseIcon"><i class="fa fa-flag"></i> Icone</a>';
-    tr += '<span class="cmdAttr" data-l1key="display" data-l2key="icon" style="margin-left : 10px;"></span>';
-    tr += '</div>';
-    tr += '<div class="col-sm-6">';
-    tr += '<input class="cmdAttr form-control input-sm" data-l1key="name">';
-    tr += '</div>';
-    tr += '</div>';
+    tr += '<span class="cmdAttr" data-l1key="htmlstate"></span>';
     tr += '</td>';
-    tr += '<td>';
-    tr += '<span><label class="checkbox-inline"><input type="checkbox" class="cmdAttr" data-l1key="isVisible" checked/>{{Afficher}}</label></span> ';
-    tr += '</td>';
-    tr += '<td>';
+    tr += '<td>'
     if (is_numeric(_cmd.id)) {
-        tr += '<a class="btn btn-default btn-xs cmdAction expertModeVisible" data-action="configure"><i class="fa fa-cogs"></i></a> ';
-        tr += '<a class="btn btn-default btn-xs cmdAction" data-action="test"><i class="fa fa-rss"></i> {{Tester}}</a>';
+        tr += '<a class="btn btn-default btn-xs cmdAction" data-action="configure"><i class="fas fa-cogs"></i></a> '
+        tr += '<a class="btn btn-default btn-xs cmdAction" data-action="test"><i class="fas fa-rss"></i> {{Tester}}</a>'
     }
-    tr += '</td>';
-    tr += '</tr>';
-    $('#table_cmd tbody').append(tr);
-    $('#table_cmd tbody tr:last').setValues(_cmd, '.cmdAttr');
-    jeedom.cmd.changeType($('#table_cmd tbody tr:last'), init(_cmd.subType));
+    tr += '<i class="fas fa-minus-circle pull-right cmdAction cursor" data-action="remove" title="{{Supprimer la commande}}"></i></td>'
+    tr += '</tr>'
+    $('#table_cmd tbody').append(tr)
+    var tr = $('#table_cmd tbody tr').last()
+
+    tr.setValues(_cmd, '.cmdAttr')
+    jeedom.cmd.changeType(tr, init(_cmd.subType))
 }
 
-$("#table_cmd").sortable({axis: "y", cursor: "move", items: ".cmd", placeholder: "ui-state-highlight", tolerance: "intersect", forcePlaceholderSize: true});
+$("#table_cmd").sortable({ axis: "y", cursor: "move", items: ".cmd", placeholder: "ui-state-highlight", tolerance: "intersect", forcePlaceholderSize: true });
