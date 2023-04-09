@@ -261,6 +261,20 @@ class dyndns extends eqLogic {
 					throw new Exception(__('Erreur de mise à jour de infomaniak.com : ', __FILE__) . $result);
 				}
 				break;
+			case 'dedyn':
+				if ($flagipv6){
+					$url = 'https://update.dedyn.io/?' . 'myipv4=' . $ip . '&myipv6=' . $ip6;
+				} else {
+					$url = 'https://update.dedyn.io/?' . 'myipv4=' . $ip;
+				}
+				log::add('dedyn', 'debug', $url);
+				//$request_http = new com_http($url);
+				$request_http = new com_http($url,$this->getConfiguration('hostname'),$this->getConfiguration('token'));
+				$request_http->setUserAgent('Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.12) Gecko/20070508 Firefox/1.5.0.12');
+				$result = $request_http->exec();
+				if (strpos($result, 'good') === false && strpos($result, 'nochg') === false) {
+					throw new Exception(__('Erreur de mise à jour de dedyn.io : ', __FILE__) . $result);
+				}
 		}
 	}
 

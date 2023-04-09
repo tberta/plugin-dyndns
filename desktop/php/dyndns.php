@@ -121,10 +121,11 @@ $eqLogics = eqLogic::byType('dyndns');
                                         <option value="stratocom">www.strato.com</option>
                                         <option value="gandinet">www.gandi.net</option>
                                         <option value="infomaniak">www.infomaniak.com</option>
+                                        <option value="dedyn">www.dedyn.io</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="serviceType dyndnsorg noipcom ovhcom duckdns stratocom gandinet infomaniak">
+                            <div class="serviceType dyndnsorg noipcom ovhcom duckdns stratocom gandinet infomaniak dedyn">
                                 <div class="form-group">
                                     <label class="col-sm-4 control-label">{{Hostname}}</label>
                                     <div class="col-sm-6">
@@ -149,13 +150,13 @@ $eqLogics = eqLogic::byType('dyndns');
                                         <input type="password" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="password" />
                                     </div>
                                 </div>
-                                <div class="form-group serviceType duckdns gandinet">
+                                <div class="form-group serviceType duckdns gandinet dedyn">
                                     <label class="col-sm-4 control-label">{{Token}}</label>
                                     <div class="col-sm-6">
                                         <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="token" />
                                     </div>
                                 </div>
-                                <div class="form-group serviceType noipcom duckdns">
+                                <div class="form-group serviceType noipcom duckdns dedyn">
                                     <label class="col-sm-4 control-label">{{IPv6}}</label>
                                     <div class="col-sm-6">
                                         <label class="checkbox-inline">
