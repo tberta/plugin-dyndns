@@ -24,7 +24,7 @@ class dyndns extends eqLogic {
 
 	/*     * ***********************Methode static*************************** */
 
-	public static function getExternalIP() {
+	public static function getExternalIPJeedom() {
 		$url = config::byKey('service::cloud::url').'/service/myip';
       		$request_http = new com_http($url);
       		$request_http->setHeader(array('Content-Type: application/json','Autorization: '.sha512(mb_strtolower(config::byKey('market::username')).':'.config::byKey('market::password'))));
@@ -38,6 +38,20 @@ class dyndns extends eqLogic {
 			return $result['data']['ip'];
 		}
 		throw new \Exception(__('impossible de recuperer votre ip externe : ',__FILE__).$data);
+	}
+
+	public static function getExternalIP() {
+		Try{
+			$request_http = new com_http("http://checkip.dyndns.com");
+			$data = $request_http->exec(8,1);
+			preg_match('/\b((?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)[.]){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?))\b/', $data, $match);
+			if (isset($match[1])) {
+				log::add('dyndns','debug','getExternalIP  result: ' . $match[1]);
+				return $match[1];
+			}
+		} catch (Exception $e) {
+			throw new \Exception(__('impossible de recuperer votre ip externe : ',__FILE__).$data);
+		}
 	}
 
 	public static function getExternalIP6() {
